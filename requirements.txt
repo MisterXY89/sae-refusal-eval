@@ -9,3 +9,8 @@ black
 isort
 mypy
 flake8
+ipykernel
+transformers
+tqdm
+pretty-errors
+python-dotenv
