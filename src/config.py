@@ -22,6 +22,7 @@ class Paths:
 @dataclass
 class Credentials:
     hf_token: str = field(default_factory=lambda: os.getenv("HF_TOKEN", ""))
+    openai_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", ""))
     # openai ...
 
 @dataclass
