@@ -13,3 +13,5 @@ __pycache__/
 .cache
 
 
+pythia-70m-deduped/
+
