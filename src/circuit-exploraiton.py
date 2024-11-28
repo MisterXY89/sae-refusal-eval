@@ -1,7 +1,3 @@
-
-# %%
-name: str = "Circuit Exploration"
-
 # %%
 import torch
 
@@ -21,12 +17,6 @@ print(f"Device: {device}")
 
 model_name = 'gpt2-small'
 model = transformer_lens.HookedTransformer.from_pretrained(model_name)
-
-# Run the model and get logits and activations
-# logits, activations = model.run_with_cache("Hello World")
-
-# %%
-# print(f"Logits shape: {logits.shape}")
 
 tokens = model.to_tokens("Hello, world!")
 
