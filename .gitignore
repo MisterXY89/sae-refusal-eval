@@ -12,6 +12,5 @@ __pycache__/
 .env
 .cache
 
-
-pythia-70m-deduped/
+pythia-*
 
