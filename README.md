@@ -29,7 +29,7 @@ Pythia quantized models: https://huggingface.co/Crataco/Pythia-Deduped-Series-GG
 - 
 
 2.8B:
-- jacobdunefsky/pythia-2.8B-saes --> instruct missing
+- jacobdunefsky/pythia-2.8B-saes 
 - https://huggingface.co/lambdalabs/pythia-2.8b-deduped-synthetic-instruct
 - Dahoas/synthetic-instruct-gptj-pairwise
   
