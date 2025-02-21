@@ -9,9 +9,10 @@ pretty_errors.activate()
 load_dotenv()
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
-DATA_DIR = os.path.join(ROOT_DIR, 'data')
-SRC_DIR = os.path.join(ROOT_DIR, 'src')
+DATA_DIR = os.path.join(ROOT_DIR, "data")
+SRC_DIR = os.path.join(ROOT_DIR, "src")
 SEED = 1160
+
 
 @dataclass
 class Paths:
@@ -19,17 +20,20 @@ class Paths:
     data: str = DATA_DIR
     src: str = SRC_DIR
 
+
 @dataclass
 class Credentials:
     hf_token: str = field(default_factory=lambda: os.getenv("HF_TOKEN", ""))
     openai_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", ""))
     # openai ...
 
+
 @dataclass
 class Config:
     paths: Paths = field(default_factory=Paths)
     credentials: Credentials = field(default_factory=Credentials)
     seed: int = SEED
+
 
 class ConfigSingleton:
     _instance = None
@@ -39,6 +43,7 @@ class ConfigSingleton:
         if cls._instance is None:
             cls._instance = Config()
         return cls._instance
+
 
 # global instance --> avoid repeated instantiation
 config = ConfigSingleton.get_instance()

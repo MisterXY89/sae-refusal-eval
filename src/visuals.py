@@ -1,6 +1,7 @@
-import torch
 import matplotlib.pyplot as plt
 import seaborn as sns
+import torch
+
 
 def visualize_activations(activations):
     """
@@ -39,6 +40,7 @@ def visualize_activations(activations):
     plt.xlabel("Hidden Dimension")
     plt.ylabel("Sequence Position")
     plt.show()
+
 
 # Example usage:
 # visualize_activations_cli(activations)

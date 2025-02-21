@@ -1,9 +1,11 @@
 from dataclasses import dataclass
 from typing import List, Optional
+
 import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
 import numpy as np
+import pandas as pd
+import seaborn as sns
+
 
 @dataclass
 class DatasetMetrics:
@@ -14,6 +16,7 @@ class DatasetMetrics:
     perplexity: Optional[float]
     perplexity_gap: Optional[float]
 
+
 @dataclass
 class PerformanceMetrics:
     mmlu: float
@@ -22,7 +25,11 @@ class PerformanceMetrics:
     refusal_rate: float
     over_refusal: float
 
-def plot_heatmap_and_multiples(metrics_list: List[DatasetMetrics], performance_list: Optional[List[PerformanceMetrics]] = None):
+
+def plot_heatmap_and_multiples(
+    metrics_list: List[DatasetMetrics],
+    performance_list: Optional[List[PerformanceMetrics]] = None,
+):
     # Define metric names
     dataset_metric_names = [
         "context_length",
@@ -46,21 +53,27 @@ def plot_heatmap_and_multiples(metrics_list: List[DatasetMetrics], performance_l
     for i, metrics in enumerate(metrics_list):
         for name in dataset_metric_names:
             value = getattr(metrics, name, None)
-            data.append({
-                "Metric": name,
-                "Value": value if value is not None else 0,  # Default to 0 for None values
-                "Dataset": f"Dataset {i+1}"
-            })
-
-    if performance_list:
-        for i, metrics in enumerate(performance_list):
-            for name in performance_metric_names:
-                value = getattr(metrics, name, None)
-                data.append({
+            data.append(
+                {
                     "Metric": name,
                     "Value": value if value is not None else 0,  # Default to 0 for None values
-                    "Dataset": f"Performance {i+1}"
-                })
+                    "Dataset": f"Dataset {i+1}",
+                }
+            )
+
+    if performance_list:
+        for i, perf in enumerate(performance_list):
+            for name in performance_metric_names:
+                value = getattr(perf, name, None)
+                data.append(
+                    {
+                        "Metric": name,
+                        "Value": (
+                            value if value is not None else 0
+                        ),  # Default to 0 for None values
+                        "Dataset": f"Performance {i+1}",
+                    }
+                )
 
     df = pd.DataFrame(data)
 
@@ -88,7 +101,7 @@ def plot_heatmap_and_multiples(metrics_list: List[DatasetMetrics], performance_l
         axes[row, col].set_title(metric, fontsize=14)
         axes[row, col].set_ylabel("Value", fontsize=12)
         axes[row, col].set_xlabel("Dataset", fontsize=12)
-    
+
     # Remove empty subplots
     for j in range(i + 1, n_rows * n_cols):
         row, col = divmod(j, n_cols)
@@ -96,6 +109,7 @@ def plot_heatmap_and_multiples(metrics_list: List[DatasetMetrics], performance_l
 
     plt.tight_layout()
     plt.show()
+
 
 # # Example usage
 # dataset1 = DatasetMetrics(5.0, 0.2, 0.8, 1.5, 30.0, 0.1)

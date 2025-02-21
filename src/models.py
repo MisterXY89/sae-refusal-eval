@@ -1,5 +1,4 @@
-
-class OneLayerTransfomer():
+class OneLayerTransfomer:
 
     def __init__(self):
         pass
@@ -11,7 +10,7 @@ class OneLayerTransfomer():
         pass
 
 
-class SimpleDeepTransfomer():
+class SimpleDeepTransfomer:
 
     def __init__(self):
         pass

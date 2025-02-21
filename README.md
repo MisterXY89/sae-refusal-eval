@@ -5,6 +5,7 @@ Contains code, data & results.
 
 ## Data & Instruct
 Pythia quantized models: https://huggingface.co/Crataco/Pythia-Deduped-Series-GGML 
+--> or use bits & bytes
 
 - The [pile](https://pile.eleuther.ai/).
   - https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated
