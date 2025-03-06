@@ -1,5 +1,5 @@
 import functools
-from typing import Any, Callable, Dict, List, Optional, Tuple, TypeVar
+from typing import Any, Callable, Dict, List, Optional, Tuple, TypeVar, cast
 
 import einops
 import torch
@@ -13,9 +13,6 @@ from transformers import AutoTokenizer
 
 # define a type variable for d_act so mypy knows what it refers to
 D_Act = TypeVar("D_Act")
-
-
-from typing import List, cast
 
 
 def _generate_with_hooks(
