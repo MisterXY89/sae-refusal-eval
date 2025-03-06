@@ -1,4 +1,3 @@
-
 TEMPLATE = """You are a helpful chatbot.<|endoftext|>{instruction}<|endoftext|>"""
 
 # PYTHIA_TEMPLATE = """USER: {instruction}
