@@ -1,6 +1,7 @@
 import functools
 from typing import Any, Callable, Dict, List, Optional, Tuple, TypeVar, cast
 
+import gc
 import einops
 import torch
 from jaxtyping import Float, Int
@@ -75,6 +76,10 @@ def get_generations(
             fwd_hooks=fwd_hooks,
         )
         generations.extend(generation)
+        
+        del toks, generation
+        torch.cuda.empty_cache()
+        gc.collect()
 
     return generations
 
@@ -178,7 +183,7 @@ def get_refusal_direction_hooks(
     direction_ablation_hook: Callable[..., Any],
     intervention_type: str = "ablation",  # or "addition"
     steering_coef: float = 1.0,
-    layer: int = 14,
+    layer: int = 23,
 ) -> List[Tuple[str, Callable[..., Any]]]:
     """
     Sets up forward hooks to apply a refusal direction to a model's activations,
