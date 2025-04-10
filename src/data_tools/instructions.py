@@ -1,10 +1,13 @@
 import io
-from typing import List, Tuple
+from typing import Any, List, Tuple
 
 import pandas as pd
 import requests  # type: ignore
 from datasets import load_dataset
+from huggingface_hub import login
 from sklearn.model_selection import train_test_split
+
+from config import config
 
 
 def get_harmful_instructions() -> Tuple[List[str], List[str]]:
@@ -27,3 +30,10 @@ def get_harmless_instructions() -> Tuple[List[str], List[str]]:
             instructions.append(dataset["train"][i]["instruction"])
     train, test = train_test_split(instructions, test_size=0.2, random_state=42)
     return train, test
+
+
+# used as benchmark for the models
+def load_wildcard_test_dataset() -> Any:
+    login(config.credentials.hf_token)
+    ds_test = load_dataset("allenai/wildguardmix", "wildguardtest")
+    return ds_test["test"]["prompt"]

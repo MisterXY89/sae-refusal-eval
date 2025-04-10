@@ -5,9 +5,9 @@ import setuptools.dist
 import torch
 import transformer_lens
 from transformers import GPT2Model, GPT2Tokenizer
+from visuals import visualize_activations
 
 from config import config
-from visuals import visualize_activations
 
 # %%
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
