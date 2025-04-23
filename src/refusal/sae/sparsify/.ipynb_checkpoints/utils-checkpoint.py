@@ -3,46 +3,79 @@ import numpy as np
 import pandas as pd
 
 
-def compute_effect_sizes(results):
+import numpy as np
+import pandas as pd
+
+import numpy as np
+import pandas as pd
+
+import numpy as np
+import pandas as pd
+
+def compute_effect_sizes(results, layer):
     """
-    Compute Cohen's d for each latent feature based on harmful vs harmless representations.
-
-    Parameters:
-        results: dict
-            Dictionary with keys "harmful_reps" and "harmless_reps" (numpy arrays of shape [num_prompts, latent_dim]).
-
-    Returns:
-        dict with keys:
-          - "cohens_d": numpy array of shape [latent_dim] with raw Cohen's d values.
-          - "df": Pandas DataFrame summarizing the effect sizes.
+    Given the dict output from analyze_latent_reps, compute Cohen's d for each latent dimension.
+    Returns a numpy array cohens_d of shape [latent_dim].
     """
-    harmful_reps = results["harmful_reps"]  # shape: [num_harmful, latent_dim]
-    harmless_reps = results["harmless_reps"]  # shape: [num_harmless, latent_dim]
+    harmful = results[layer]["harmful_reps"]   # shape [num_harmful, latent_dim]
+    harmless = results[layer]["harmless_reps"] # shape [num_harmless, latent_dim]
+    n_h, n_dim = harmful.shape
+    n_c, _     = harmless.shape
 
-    latent_dim = harmful_reps.shape[1]
-    cohens_d = []
+    # means and variances
+    mu_h = harmful.mean(axis=0)
+    mu_c = harmless.mean(axis=0)
+    var_h = harmful.var(axis=0, ddof=1)
+    var_c = harmless.var(axis=0, ddof=1)
 
-    for dim in range(latent_dim):
-        group1 = harmful_reps[:, dim]
-        group2 = harmless_reps[:, dim]
-        diff = group1.mean() - group2.mean()
-        n1, n2 = len(group1), len(group2)
-        var1, var2 = group1.var(ddof=1), group2.var(ddof=1)
-        pooled_std = np.sqrt(((n1 - 1) * var1 + (n2 - 1) * var2) / (n1 + n2 - 2))
-        d = diff / pooled_std if pooled_std != 0 else 0
-        cohens_d.append(d)
+    # pooled std
+    pooled_std = np.sqrt(((n_h-1)*var_h + (n_c-1)*var_c) / (n_h + n_c - 2))
+    # avoid zero‐division
+    pooled_std[pooled_std == 0] = np.nan
 
-    cohens_d = np.array(cohens_d)
-    df = pd.DataFrame(
-        {
-            "Latent Dimension": np.arange(latent_dim),
-            "Cohen's d": cohens_d,
-            "Absolute d": np.abs(cohens_d),
-        }
-    ).sort_values("Cohen's d", ascending=False)
+    cohens_d = (mu_h - mu_c) / pooled_std
+    cohens_d = np.nan_to_num(cohens_d)  # replace nan→0
+    return cohens_d
 
-    return {"cohens_d": cohens_d, "df": df}
+def identify_top_features(results, layers, N=5):
+    """
+    Compute effect sizes and return the top N dimensions most associated
+    with harmful (positive d) and harmless (negative d) prompts.
+    """
+    records = []
+    for layer in layers:
+        stats = results[layer]
+        harmful = stats["harmful_reps"]
+        harmless = stats["harmless_reps"]
+        # compute Cohen's d
+        n_h, latent_dim = harmful.shape
+        n_c, _ = harmless.shape
+        mu_h = harmful.mean(axis=0)
+        mu_c = harmless.mean(axis=0)
+        var_h = harmful.var(axis=0, ddof=1)
+        var_c = harmless.var(axis=0, ddof=1)
+        pooled = np.sqrt(((n_h-1)*var_h + (n_c-1)*var_c) / (n_h + n_c - 2))
+        pooled[pooled == 0] = np.nan
+        d = (mu_h - mu_c) / pooled
+        d = np.nan_to_num(d)
+        # collect per-dimension
+        for dim, val in enumerate(d):
+            records.append({
+                "layer": layer,
+                "latent_dim": dim,
+                "Cohen's d": val
+            })
 
+    df_all = pd.DataFrame(records)
+    # top harmful = largest positive d
+    top_harmful = df_all.nlargest(N, "Cohen's d").reset_index(drop=True)
+    # top harmless = most negative d
+    top_harmless = df_all.nsmallest(N, "Cohen's d").reset_index(drop=True)
+
+    return {
+        "top_harmful": top_harmful,
+        "top_harmless": top_harmless
+    }
 
 def build_comparison_df(mean_harmful, mean_harmless, diff):
     latent_dim = len(diff)
