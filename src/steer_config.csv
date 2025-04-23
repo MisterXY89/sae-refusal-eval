@@ -1,0 +1,2 @@
+loader,action,sparse_model,hookpoint,feature_index,steering_coefficient
+sparsify,add,EleutherAI/sae-pythia-410m-65k,layers.1.mlp,384,10.0
