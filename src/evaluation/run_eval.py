@@ -80,7 +80,7 @@ def main():
         "--model_args", model_args,
         "--tasks", args.tasks,
         "--device", args.device,
-        "--wandb_args", f"project={args.wandb_project}",
+        # "--wandb_args", f"project={args.wandb_project}",
     ]
     if args.limit:
         cmd += ["--limit", str(args.limit)]
