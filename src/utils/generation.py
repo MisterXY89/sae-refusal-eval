@@ -4,6 +4,13 @@ from jaxtyping import Int
 from torch import Tensor
 from transformers import AutoTokenizer
 
+HF_GENERATION_KW_ARGS = {
+    "do_sample": True,
+    "temperature": 0.7,
+    "top_k": 50,
+    "max_new_tokens": 100,
+}
+
 
 def format_instruction(
     instruction: str,
