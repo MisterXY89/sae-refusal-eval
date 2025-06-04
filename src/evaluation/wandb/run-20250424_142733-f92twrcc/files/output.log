@@ -1,0 +1,130 @@
+2025-04-24:14:27:35 WARNING  [__main__:368]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2025-04-24:14:27:35 INFO     [__main__:440] Selected Tasks: ['hendrycks_ethics', 'mmlu', 'realtoxicityprompts', 'toxigen']
+2025-04-24:14:27:35 INFO     [evaluator:185] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2025-04-24:14:27:35 INFO     [evaluator:223] Initializing hf model, with arguments: {'pretrained': 'EleutherAI/pythia-410m-deduped'}
+2025-04-24:14:27:35 INFO     [models.huggingface:137] Using device 'cuda:0'
+2025-04-24:14:27:36 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
+2025-04-24:14:27:37 WARNING  [api.task:844] [Task: ethics_deontology] metric acc is defined, but aggregation is not. using default aggregation=mean
+2025-04-24:14:27:37 WARNING  [api.task:856] [Task: ethics_deontology] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2025-04-24:14:27:39 WARNING  [api.task:844] [Task: ethics_justice] metric acc is defined, but aggregation is not. using default aggregation=mean
+2025-04-24:14:27:39 WARNING  [api.task:856] [Task: ethics_justice] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2025-04-24:14:27:41 WARNING  [api.task:844] [Task: ethics_cm] metric acc is defined, but aggregation is not. using default aggregation=mean
+2025-04-24:14:27:41 WARNING  [api.task:856] [Task: ethics_cm] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2025-04-24:14:27:43 WARNING  [api.task:844] [Task: ethics_virtue] metric acc is defined, but aggregation is not. using default aggregation=mean
+2025-04-24:14:27:43 WARNING  [api.task:856] [Task: ethics_virtue] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+2025-04-24:14:27:45 WARNING  [api.task:844] [Task: ethics_utilitarianism] metric acc is defined, but aggregation is not. using default aggregation=mean
+2025-04-24:14:27:45 WARNING  [api.task:856] [Task: ethics_utilitarianism] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+Traceback (most recent call last):
+  File "/home/tilman.kerl/miniconda3/envs/refusal/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+             ^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/evaluator.py", line 264, in simple_evaluate
+    task_dict = get_task_dict(
+                ^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 635, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 426, in load_task_or_group
+    collections.ChainMap(
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 428, in <lambda>
+    lambda task: self._load_individual_task_or_group(task),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 325, in _load_individual_task_or_group
+    task_config = self._get_config(name_or_config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 233, in _get_config
+    return utils.load_yaml_config(yaml_path, mode="full")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 484, in load_yaml_config
+    yaml_config = yaml.load(file, Loader=loader)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 218, in construct_mapping
+    return super().construct_mapping(node, deep=deep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 143, in construct_mapping
+    value = self.construct_object(value_node, deep=deep)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 100, in construct_object
+    data = constructor(self, node)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 464, in import_function
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/realtoxicityprompts/metric.py", line 7, in <module>
+    from lm_eval.utils import eval_logger
+ImportError: cannot import name 'eval_logger' from 'lm_eval.utils' (/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py)
+Traceback (most recent call last):
+  File "/home/tilman.kerl/miniconda3/envs/refusal/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+             ^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/evaluator.py", line 264, in simple_evaluate
+    task_dict = get_task_dict(
+                ^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 635, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 426, in load_task_or_group
+    collections.ChainMap(
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 428, in <lambda>
+    lambda task: self._load_individual_task_or_group(task),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 325, in _load_individual_task_or_group
+    task_config = self._get_config(name_or_config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/__init__.py", line 233, in _get_config
+    return utils.load_yaml_config(yaml_path, mode="full")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 484, in load_yaml_config
+    yaml_config = yaml.load(file, Loader=loader)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 218, in construct_mapping
+    return super().construct_mapping(node, deep=deep)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 143, in construct_mapping
+    value = self.construct_object(value_node, deep=deep)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/yaml/constructor.py", line 100, in construct_object
+    data = constructor(self, node)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 464, in import_function
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/tasks/realtoxicityprompts/metric.py", line 7, in <module>
+    from lm_eval.utils import eval_logger
+ImportError: cannot import name 'eval_logger' from 'lm_eval.utils' (/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py)

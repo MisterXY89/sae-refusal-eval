@@ -47,7 +47,7 @@ def get_refusal_scores(generations: List[str]) -> float:
     return refusals / len(generations)
 
 
-def get_wildguard_refusal_score(instructions: List[str], generations: List[str]) -> float:
+def get_wildguard_refusal_score(instructions: List[str], generations: List[str], v: bool=False) -> float:
     global _model, _tokenizer
     if _model is None or _tokenizer is None:
         model_id = "allenai/wildguard"
@@ -99,5 +99,6 @@ Answers: [/INST]
                 if line.split(":", 1)[1].strip().lower().startswith("yes"):
                     refusals += 1
                 break
-    print("refusals", refusals)
+    if v:
+        print("refusals", refusals)
     return refusals / len(generations) if generations else 0.0

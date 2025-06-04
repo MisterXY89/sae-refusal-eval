@@ -1,0 +1,16 @@
+{"time":"2025-04-24T14:30:50.946109747Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/tilman.kerl/mech-interp/src/evaluation/wandb/run-20250424_143050-1mcxmc23/logs/debug-core.log"}
+{"time":"2025-04-24T14:30:51.056897306Z","level":"INFO","msg":"created new stream","id":"1mcxmc23"}
+{"time":"2025-04-24T14:30:51.056951209Z","level":"INFO","msg":"stream: started","id":"1mcxmc23"}
+{"time":"2025-04-24T14:30:51.056977619Z","level":"INFO","msg":"writer: Do: started","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:30:51.058473142Z","level":"INFO","msg":"sender: started","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:30:51.058537225Z","level":"INFO","msg":"handler: started","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:30:51.375647728Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-24T14:33:45.345538142Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-24T14:33:45.346023904Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-24T14:33:46.346902458Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-1mcxmc23-evaluationgroup_eval_results","runtime_seconds":1.561266249},{"desc":"uploading artifact results","runtime_seconds":1.331029178,"subtasks":[{"desc":"results.json","runtime_seconds":0.409336778,"progress":"100.7KB/100.7KB"}]}],"total_operations":2}}
+{"time":"2025-04-24T14:33:47.634833732Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-24T14:33:47.967413853Z","level":"INFO","msg":"stream: closing","id":"1mcxmc23"}
+{"time":"2025-04-24T14:33:47.967427501Z","level":"INFO","msg":"handler: closed","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:33:47.967439428Z","level":"INFO","msg":"writer: Close: closed","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:33:47.967491939Z","level":"INFO","msg":"sender: closed","stream_id":"1mcxmc23"}
+{"time":"2025-04-24T14:33:47.967506632Z","level":"INFO","msg":"stream: closed","id":"1mcxmc23"}

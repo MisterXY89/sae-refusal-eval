@@ -1,0 +1,15 @@
+{"time":"2025-04-24T14:27:33.190517635Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/tilman.kerl/mech-interp/src/evaluation/wandb/run-20250424_142733-f92twrcc/logs/debug-core.log"}
+{"time":"2025-04-24T14:27:33.293508254Z","level":"INFO","msg":"created new stream","id":"f92twrcc"}
+{"time":"2025-04-24T14:27:33.293556923Z","level":"INFO","msg":"stream: started","id":"f92twrcc"}
+{"time":"2025-04-24T14:27:33.293576249Z","level":"INFO","msg":"handler: started","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:27:33.293619447Z","level":"INFO","msg":"sender: started","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:27:33.293642784Z","level":"INFO","msg":"writer: Do: started","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:27:33.63134027Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-24T14:30:13.912633135Z","level":"INFO","msg":"stream: closing","id":"f92twrcc"}
+{"time":"2025-04-24T14:30:13.912666024Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-24T14:30:13.9132467Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-24T14:30:14.902130533Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-24T14:30:15.154090216Z","level":"INFO","msg":"handler: closed","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:30:15.154125155Z","level":"INFO","msg":"writer: Close: closed","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:30:15.154160242Z","level":"INFO","msg":"sender: closed","stream_id":"f92twrcc"}
+{"time":"2025-04-24T14:30:15.15418451Z","level":"INFO","msg":"stream: closed","id":"f92twrcc"}

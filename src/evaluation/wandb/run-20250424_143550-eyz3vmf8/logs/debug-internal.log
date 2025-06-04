@@ -1,0 +1,16 @@
+{"time":"2025-04-24T14:35:50.316124483Z","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/home/tilman.kerl/mech-interp/src/evaluation/wandb/run-20250424_143550-eyz3vmf8/logs/debug-core.log"}
+{"time":"2025-04-24T14:35:50.420232261Z","level":"INFO","msg":"created new stream","id":"eyz3vmf8"}
+{"time":"2025-04-24T14:35:50.420289463Z","level":"INFO","msg":"stream: started","id":"eyz3vmf8"}
+{"time":"2025-04-24T14:35:50.420297439Z","level":"INFO","msg":"handler: started","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:35:50.420340873Z","level":"INFO","msg":"sender: started","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:35:50.420362967Z","level":"INFO","msg":"writer: Do: started","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:35:50.764417092Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-24T14:39:59.075647088Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-24T14:39:59.076202252Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-24T14:40:00.077090377Z","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-eyz3vmf8-evaluationeval_results","runtime_seconds":1.931236061},{"desc":"uploading artifact run-eyz3vmf8-evaluationgroup_eval_results","runtime_seconds":1.4130342},{"desc":"uploading artifact results","runtime_seconds":1.188586659,"subtasks":[{"desc":"results.json","runtime_seconds":0.326771831,"progress":"108.7KB/108.7KB"}]}],"total_operations":3}}
+{"time":"2025-04-24T14:40:01.52436828Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-24T14:40:01.840966486Z","level":"INFO","msg":"stream: closing","id":"eyz3vmf8"}
+{"time":"2025-04-24T14:40:01.840981581Z","level":"INFO","msg":"handler: closed","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:40:01.840991551Z","level":"INFO","msg":"writer: Close: closed","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:40:01.841040246Z","level":"INFO","msg":"sender: closed","stream_id":"eyz3vmf8"}
+{"time":"2025-04-24T14:40:01.841054649Z","level":"INFO","msg":"stream: closed","id":"eyz3vmf8"}
