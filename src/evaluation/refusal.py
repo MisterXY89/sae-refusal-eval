@@ -95,7 +95,7 @@ Answers: [/INST]
         decoded = _tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
         for line in decoded.splitlines():
             if line.strip().startswith("Response refusal:"):
-                print(line)
+                # print(line)
                 if line.split(":", 1)[1].strip().lower().startswith("yes"):
                     refusals += 1
                 break
