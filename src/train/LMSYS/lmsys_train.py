@@ -5,9 +5,6 @@ from sae_lens import (
 
 from datasets import load_dataset
 
-# linear probing to identify pot. SAE layers
-# sae for "single" layers // transcoders (cross-layer?) -> for all layers
-
 # ——— Toggle TEST_MODE ——————————————————————————————————————————————————
 # If True → tiny run, no logging, no uploads. If False → full run + HuggingFace upload.
 TEST_MODE = False

@@ -2,11 +2,14 @@ venv/
 
 ma_env/
 
-**/__pycache__/*
+**/wandb/*
 
+**/__pycache__/*
+**/.ipynb_checkpoints/*
 */*.pyc
 .pytest_cache/
 .mypy_cache/
+
 .vscode/
 
 .DS_Store
@@ -20,3 +23,5 @@ seminar/
 thesis/
 
 src/0.37.0
+
+**/checkpoints/*

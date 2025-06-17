@@ -17,4 +17,4 @@ conda activate refusal
 export HF_TOKEN=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
 export HF_HOME=/share/tilman.kerl/huggingface
 
-python train.py
+python pile_train_sae_lens.py

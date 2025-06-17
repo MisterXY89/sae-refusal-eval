@@ -1,0 +1,35 @@
+/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/sparsify/__main__.py", line 197, in <module>
+    run()
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/sparsify/__main__.py", line 163, in run
+    model, dataset = load_artifacts(args, rank)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/sparsify/__main__.py", line 85, in load_artifacts
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4793, in _load_pretrained_model
+    caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5799, in caching_allocator_warmup
+    device_memory = torch.cuda.mem_get_info(index)[0]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/torch/cuda/memory.py", line 738, in mem_get_info
+    return torch.cuda.cudart().cudaMemGetInfo(device)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/torch/cuda/__init__.py", line 396, in cudart
+    _lazy_init()
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.
