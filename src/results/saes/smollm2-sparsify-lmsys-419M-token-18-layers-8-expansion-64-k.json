@@ -1,8 +1,8 @@
 {
-  "explained_variance": 0.9803570147684827,
-  "fraction_var_unexplained": 0.0196429852315173,
-  "mse": 66.8273348352956,
-  "cosine_similarity": 0.7806844912884277,
+  "explained_variance": 0.9803570213843653,
+  "fraction_var_unexplained": 0.01964297861563469,
+  "mse": 66.82731232742334,
+  "cosine_similarity": 0.7806844546497566,
   "activation_sparsity_l0": 0.013886546788155261,
   "weight_sparsity": 0.00017632378148846328,
   "dead_features_pct": 0.10894097222222222,
