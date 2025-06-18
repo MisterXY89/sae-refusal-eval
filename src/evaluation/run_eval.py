@@ -25,7 +25,7 @@ def main():
         help="path to steering CSV (only used if model_type=steered)"
     )
     # individual steering params, if you prefer to generate the CSV here:
-    p.add_argument("--loader", help="steering loader (e.g. spar­sify)")
+    p.add_argument("--loader", help="steering loader (e.g. sparsify)")
     p.add_argument("--action", help="steering action (add|mul|etc.)")
     p.add_argument(
         "--sparse_model",
@@ -132,4 +132,21 @@ python run_eval.py \
     """
     main()
 
+
+
+python run_eval.py \
+  --model_type steered \
+  --pretrained HuggingFaceTB/SmolLM2-135M \
+  --loader sparsify \
+  --action add \
+  --sparse_model /home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/smollm2-sparsify-lmsys-419M-token-18-layers-16-expansion-64-k \
+  --hookpoint layers.8 \
+  --feature_index 17 \
+  --steering_coefficient 10.0 \
+  --tasks mmlu 
+# ,realtoxicityprompts,toxigen,hendrycks_ethics \
+  --device cuda:0 \
+  --wandb_project MA-sae-eval \
+  --limit 10 \
+  --batch_size 8
     

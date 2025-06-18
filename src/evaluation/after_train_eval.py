@@ -28,6 +28,7 @@ def _load_model_and_tok(model_name: str, dev: str = DEV):
         lm = AutoModelForCausalLM.from_pretrained(
             model_name,
             output_hidden_states=True,
+            return_dict_in_generate=True
         ).to(dev).eval()
         
         return tok, lm

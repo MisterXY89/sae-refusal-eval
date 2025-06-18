@@ -25,6 +25,11 @@ def parse_token_size(token_str: str) -> float:
         return float('nan')
     return float('nan')
 
+def sanitize_filename(name: str) -> str:
+    """Removes special characters from a string to make it a valid filename."""
+    return re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+
+
 def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
     """
     Loads all SAE evaluation .json files from a directory into a pandas DataFrame.
@@ -56,106 +61,124 @@ def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
     df = pd.DataFrame(all_results)
 
     # --- Data Cleaning and Feature Engineering ---
-    # Convert token size string to a numeric value for plotting
     if 'sae_token_size' in df.columns:
         df['sae_token_size_mil'] = df['sae_token_size'].apply(parse_token_size)
 
+    df = df.sort_values('sae_token_size_mil')
     print("Data loaded and processed successfully.")
     return df
 
-def visualize_sae_results(df: pd.DataFrame, save_path: str = "sae_evaluation_dashboard.png"):
+def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results/visualizations/"):
     """
-    Generates and saves a dashboard of plots to visualize SAE performance.
+    Generates and saves a separate, more interpretable dashboard for each 
+    evaluation dataset found in the results.
 
     Args:
         df: DataFrame containing the aggregated SAE results.
-        save_path: Path to save the output plot image.
+        results_path: Directory to save the output plot images.
     """
     if df.empty:
         print("DataFrame is empty. Skipping visualization.")
         return
 
-    # Set a nice theme for the plots
-    sns.set_theme(style="whitegrid", palette="viridis", context="talk")
-
-    # Determine the number of unique datasets to adjust plot layout
-    num_datasets = df['sae_train_dataset'].nunique()
+    Path(results_path).mkdir(parents=True, exist_ok=True)
+    sns.set_theme(style="whitegrid", context="talk")
     
-    # Create a figure with subplots. We'll create 3 main plots.
-    fig, axes = plt.subplots(3, 1, figsize=(15, 25))
-    fig.suptitle('SAE Performance Analysis Dashboard', fontsize=24, weight='bold')
+    eval_datasets = df['eval_dataset'].unique()
+    print(f"\nFound {len(eval_datasets)} evaluation datasets. Generating a dashboard for each...")
 
-    # --- Plot 1: Explained Variance vs. Expansion Factor, faceted by Dataset ---
-    ax1 = axes[0]
-    sns.barplot(
-        data=df,
-        x='sae_expansion_factor',
-        y='explained_variance',
-        hue='sae_train_dataset',
-        ax=ax1,
-        errorbar='sd' # Show standard deviation as error bars
-    )
-    ax1.set_title('Explained Variance vs. SAE Expansion Factor', fontsize=18, weight='bold')
-    ax1.set_xlabel('SAE Expansion Factor', fontsize=14)
-    ax1.set_ylabel('Explained Variance (EV)', fontsize=14)
-    ax1.set_ylim(bottom=max(0, df['explained_variance'].min() - 0.05), top=1.01)
-    ax1.legend(title='Train Dataset', loc='best')
+    for i, dataset in enumerate(eval_datasets):
+        print(f"  [{i+1}/{len(eval_datasets)}] Generating dashboard for eval_dataset: '{dataset}'")
+        
+        df_group = df[df['eval_dataset'] == dataset].copy()
+        
+        # --- Plot 1: Reconstruction Quality (Bar Plot Grid) ---
+        g1 = sns.catplot(
+            data=df_group,
+            x='sae_token_size_mil',
+            y='explained_variance',
+            hue='sae_train_dataset',
+            col='sae_expansion_factor',
+            kind='bar',
+            palette='Blues',
+            height=6,
+            aspect=1.2,
+            legend_out=True
+        )
+        g1.fig.suptitle(f"Reconstruction Quality (EV) on '{dataset}'", y=1.03, fontsize=20, weight='bold')
+        g1.set_axis_labels("Training Tokens (Millions)", "Explained Variance (EV)")
+        g1.set_titles("Expansion Factor: {col_name}")
+        g1.set(ylim=(0.8, 1.0))
+        g1.despine(left=True)
 
-    # --- Plot 2: Cosine Similarity vs. Token Size, faceted by Expansion Factor ---
-    ax2 = axes[1]
-    # Use a pointplot to show evolution over token sizes
-    sns.pointplot(
-        data=df.sort_values('sae_token_size_mil'),
-        x='sae_token_size_mil',
-        y='cosine_similarity',
-        hue='sae_expansion_factor',
-        ax=ax2,
-        palette='magma',
-        errorbar='sd',
-        dodge=True
-    )
-    ax2.set_title('Reconstruction Cosine Similarity vs. Training Tokens', fontsize=18, weight='bold')
-    ax2.set_xlabel('SAE Training Tokens (Millions)', fontsize=14)
-    ax2.set_ylabel('Cosine Similarity', fontsize=14)
-    ax2.legend(title='Expansion Factor', loc='best')
+        save_filename_1 = f"dashboard_1_EV_eval_on_{sanitize_filename(dataset)}.png"
+        save_path_1 = Path(results_path) / save_filename_1
+        plt.savefig(save_path_1, dpi=150, bbox_inches='tight')
+        print(f"    -> Plot 1 saved to '{save_path_1}'")
+        plt.close(g1.fig)
 
-    # --- Plot 3: Dead Feature Percentage vs. Training Dataset ---
-    ax3 = axes[2]
-    sns.boxplot(
-        data=df,
-        x='sae_train_dataset',
-        y='dead_features_pct',
-        hue='sae_expansion_factor',
-        ax=ax3,
-        palette='crest'
-    )
-    ax3.set_title('Dead Feature Percentage by Training Dataset', fontsize=18, weight='bold')
-    ax3.set_xlabel('SAE Training Dataset', fontsize=14)
-    ax3.set_ylabel('Dead Features (%)', fontsize=14)
-    # Format y-axis as percentage
-    ax3.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y:.1%}'))
-    ax3.legend(title='Expansion Factor', loc='best')
+        # --- Plot 2: Feature Health (Bar Plot Grid) ---
+        g2 = sns.catplot(
+            data=df_group,
+            x='sae_token_size_mil',
+            y='dead_features_pct',
+            hue='sae_train_dataset',
+            col='sae_expansion_factor',
+            kind='bar',
+            palette='Oranges',
+            height=6,
+            aspect=1.2,
+            legend_out=True
+        )
+        g2.fig.suptitle(f"Feature Health on '{dataset}'", y=1.03, fontsize=20, weight='bold')
+        g2.set_axis_labels("Training Tokens (Millions)", "Dead Features (%)")
+        g2.set_titles("Expansion Factor: {col_name}")
+        # Format y-axis as percentage
+        for ax in g2.axes.flat:
+            ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y:.1%}'))
+        g2.despine(left=True)
 
-    # --- Finalize and Save ---
-    plt.tight_layout(rect=[0, 0.03, 1, 0.97]) # Adjust for suptitle
-    
-    try:
-        plt.savefig(save_path, dpi=150, bbox_inches='tight')
-        print(f"\nDashboard saved successfully to '{save_path}'")
-    except Exception as e:
-        print(f"\nError saving plot: {e}")
+        save_filename_2 = f"dashboard_2_DeadFeatures_eval_on_{sanitize_filename(dataset)}.png"
+        save_path_2 = Path(results_path) / save_filename_2
+        plt.savefig(save_path_2, dpi=150, bbox_inches='tight')
+        print(f"    -> Plot 2 saved to '{save_path_2}'")
+        plt.close(g2.fig)
 
-    plt.show()
+        # --- Plot 3: Reconstruction vs. Sparsity Trade-off (Scatter Plot) ---
+        g3 = sns.relplot(
+            data=df_group,
+            x='explained_variance',
+            y='dead_features_pct',
+            hue='sae_expansion_factor',
+            size='sae_token_size_mil',
+            style='sae_train_dataset',
+            palette='viridis',
+            height=8,
+            aspect=1.4,
+            sizes=(100, 400),
+            legend="full"
+        )
+        g3.fig.suptitle(f"Reconstruction vs. Dead Features Trade-off on '{dataset}'", y=1.03, fontsize=20, weight='bold')
+        g3.set_axis_labels("Explained Variance (Higher is Better)", "Dead Features (Lower is Better)")
+        g3.ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y:.1%}'))
+        g3.despine(left=True, bottom=True)
+        
+        save_filename_3 = f"dashboard_3_Tradeoff_eval_on_{sanitize_filename(dataset)}.png"
+        save_path_3 = Path(results_path) / save_filename_3
+        plt.savefig(save_path_3, dpi=150, bbox_inches='tight')
+        print(f"    -> Plot 3 saved to '{save_path_3}'")
+        plt.close(g3.fig)
 
 
 if __name__ == '__main__':
     # Define the directory where your results are stored
     RESULTS_DIRECTORY = "results/saes/"
+    VISUALIZATION_DIRECTORY = "visualizations/"
     
     # 1. Load the data
     results_df = load_sae_results(RESULTS_DIRECTORY)
     
-    # 2. Generate and save the visualizations
+    # 2. Generate and save the visualizations, grouped by evaluation dataset
     if not results_df.empty:
-        visualize_sae_results(results_df)
+        visualize_sae_results_grouped(results_df, VISUALIZATION_DIRECTORY)
 
