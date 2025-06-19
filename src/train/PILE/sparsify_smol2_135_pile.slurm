@@ -20,13 +20,13 @@ set -e
 # === Parameter Lists for Grid Search ===
 # Add any number of example counts you want to test here
 TOTAL_MAX=6557946
-MAX_EXAMPLES_LIST=(6557946 3906200 1953100 781250) # Corresponds to ~419M ~250M and ~125M and 50M tokens
+MAX_EXAMPLES_LIST=(6557940 3906200 1953100 781250) # Corresponds to ~419M ~250M and ~125M and 50M tokens
 EXPANSION_FACTOR_LIST=(8 16 32)
 
 # === Constant Parameter Definitions ===
 MODEL="HuggingFaceTB/SmolLM2-135M"
 DATASET="monology/pile-uncopyrighted"
-LAYERS=18
+LAYERS="6 25"
 NUM_PROC=4
 
 # === Constant Hyperparameters ===

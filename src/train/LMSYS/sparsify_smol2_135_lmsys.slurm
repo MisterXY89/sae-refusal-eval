@@ -1,40 +1,44 @@
 #!/usr/bin/env bash
 
-#SBATCH --job-name=smollm2-SAE
+#SBATCH --job-name=grid-smollm2-SAE
 # alt: a100, a100s
 #SBATCH --partition=GPU-a100
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
 #SBATCH --gres=gpu:a100:2
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=64G   #64 for a100, 48 for a40
-#SBATCH --time=10:00:00 
-#SBATCH --output=logs/sparsify_smol2_%j.out
+#SBATCH --mem=64G  #32/48 for a40
+# IMPORTANT: Time is for ALL runs combined. 2 MAX_EX * 3 factors = 6 runs.
+#SBATCH --time=12:00:00
+#SBATCH --output=logs/sparsify_smol2_grid_%j.out
 #SBATCH --mail-user=tilman.kerl@tuwien.ac.at
-#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-type=ALL
 
-# Fail on error
+# Exit immediately if a command exits with a non-zero status.
 set -e
 
-# === Parameter Definitions ===
+# === Parameter Lists for Grid Search ===
+# Add any number of example counts you want to test here
+TOTAL_MAX=6557946          
+MAX_EXAMPLES_LIST=(6557940 3906200 1953100 781250) # Corresponds to ~419M ~250M and ~125M and 50M tokens
+EXPANSION_FACTOR_LIST=(8 16 32)
+
+# === Constant Parameter Definitions ===
 MODEL="HuggingFaceTB/SmolLM2-135M"
 DATASET="MisterXY89/lmsys-processed"
-LAYERS=18
-NUM_PROC=4
-# train tokens @ ctx_len=64
-# ca 419M
-# MAX_EX=6557946 # this is the max length supported by the dataset ~approx 419M
-# ca 250M tokens
-MAX_EX=3906200
-MAX_EX_MB=$(( (MAX_EX * 64) / 1000000 ))
+LAYERS=(6 25)
+# helper string for the run-name
+LAYERS_TAG="$(IFS=_; echo "${LAYERS[*]}")"   # -> "6_25"
 
-# === Hyperparameters ===
+NUM_PROC=4
+
+# === Constant Hyperparameters ===
 K=64
-BATCH_SIZE=48   #32 for a40, 48 for A100
+BATCH_SIZE=48   # 32 for a40, 48 for a100
 GRAD_ACC_STEPS=4
 CTX_LEN=64
 
-# === Logging ===
+# === Constant Logging ===
 WANDB_FREQ=100
 
 # === Environment setup ===
@@ -44,147 +48,46 @@ conda activate refusal
 export HF_TOKEN=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
 export HF_HOME=/share/tilman.kerl/huggingface
 
-#######################################
-#               RUN 1
-#######################################
-echo "--- Starting Run 1: Expansion Factor 16 ---"
 
-# === Set parameters for Run 1 ===
-EXPANSION_FACTOR=16
-RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
+# === Main Execution Loop ===
+# Outer loop for MAX_EX
+for max_ex_val in "${MAX_EXAMPLES_LIST[@]}"; do
+    # Set MAX_EX for this batch of runs
+    MAX_EX=${max_ex_val}
+    # IMPORTANT: Recalculate MAX_EX_MB inside the loop
+    MAX_EX_MB=$(( (MAX_EX * 64) / 1000000 ))
 
-# === Launch Run 1 ===
-torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-  --split "train" \
-  --max_examples ${MAX_EX} \
-  --expansion_factor ${EXPANSION_FACTOR} \
-  --k ${K} \
-  --batch_size ${BATCH_SIZE} \
-  --grad_acc_steps ${GRAD_ACC_STEPS} \
-  --ctx_len ${CTX_LEN} \
-  --layers ${LAYERS} \
-  --data_preprocessing_num_proc ${NUM_PROC} \
-  --log_to_wandb \
-  --run_name ${RUN_NAME} \
-  --wandb_log_frequency ${WANDB_FREQ}
+    echo "#####################################################"
+    echo "### Starting Set of Runs for MAX_EX = ${MAX_EX} (${MAX_EX_MB}M tokens) ###"
+    echo "#####################################################"
 
-echo "--- Run 1 finished. ---"
+    # Inner loop for EXPANSION_FACTOR
+    for factor in "${EXPANSION_FACTOR_LIST[@]}"; do
+        echo "====================================================="
+        echo "    Starting Run: Factor=${factor}, Tokens=${MAX_EX_MB}M"
+        echo "====================================================="
 
-#######################################
-#               RUN 2
-#######################################
-echo "--- Starting Run 2: Expansion Factor 32 ---"
+        # dynamically set the expansion factor and run name for the current iteration
+        EXPANSION_FACTOR=${factor}
+        RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS_TAG}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
+        
+        torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
+          --split "train[:${TOTAL_MAX}]" \
+          --max_examples ${MAX_EX} \
+          --expansion_factor ${EXPANSION_FACTOR} \
+          --k ${K} \
+          --batch_size ${BATCH_SIZE} \
+          --grad_acc_steps ${GRAD_ACC_STEPS} \
+          --ctx_len ${CTX_LEN} \
+          --layers "${LAYERS[@]}" \
+          --data_preprocessing_num_proc ${NUM_PROC} \
+          --log_to_wandb \
+          --run_name ${RUN_NAME} \
+          --wandb_log_frequency ${WANDB_FREQ} \
+          --distribute_modules
 
-# === Set parameters for Run 2 ===
-EXPANSION_FACTOR=32
-RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
+        echo "--- Finished Run: Factor=${factor}, Tokens=${MAX_EX_MB}M ---"
+    done
+done
 
-# === Launch Run 2 ===
-torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-  --split "train" \
-  --max_examples ${MAX_EX} \
-  --expansion_factor ${EXPANSION_FACTOR} \
-  --k ${K} \
-  --batch_size ${BATCH_SIZE} \
-  --grad_acc_steps ${GRAD_ACC_STEPS} \
-  --ctx_len ${CTX_LEN} \
-  --layers ${LAYERS} \
-  --data_preprocessing_num_proc ${NUM_PROC} \
-  --log_to_wandb \
-  --run_name ${RUN_NAME} \
-  --wandb_log_frequency ${WANDB_FREQ}
-
-
-
-#######################################
-#               RUN 3 (MAX_EX CHANGE)/8 EXP
-#######################################
-echo ">>>> MAX_EX 125M <<<"
-echo "--- Starting Run 3: Expansion Factor 8 ---"
-
-# === Set parameters for Run 3 ===
-MAX_EX=1953100
-MAX_EX_MB=$(( (MAX_EX * 64) / 1000000 ))
-EXPANSION_FACTOR=8
-RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
-
-# === Launch Run 1 ===
-torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-  --split "train" \
-  --max_examples ${MAX_EX} \
-  --expansion_factor ${EXPANSION_FACTOR} \
-  --k ${K} \
-  --batch_size ${BATCH_SIZE} \
-  --grad_acc_steps ${GRAD_ACC_STEPS} \
-  --ctx_len ${CTX_LEN} \
-  --layers ${LAYERS} \
-  --data_preprocessing_num_proc ${NUM_PROC} \
-  --log_to_wandb \
-  --run_name ${RUN_NAME} \
-  --wandb_log_frequency ${WANDB_FREQ}
-
-echo "--- Run 3 finished. ---"
-
-
-#######################################
-#               RUN 4 (MAX_EX CHANGE)/16 EXP
-#######################################
-echo ">>>> MAX_EX 350M <<<"
-echo "--- Starting Run 4: Expansion Factor 16 ---"
-
-# === Set parameters for Run 3 ===
-MAX_EX=1953100
-MAX_EX_MB=$(( (MAX_EX * 64) / 1000000 ))
-EXPANSION_FACTOR=16
-RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
-
-# === Launch Run 4 ===
-torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-  --split "train" \
-  --max_examples ${MAX_EX} \
-  --expansion_factor ${EXPANSION_FACTOR} \
-  --k ${K} \
-  --batch_size ${BATCH_SIZE} \
-  --grad_acc_steps ${GRAD_ACC_STEPS} \
-  --ctx_len ${CTX_LEN} \
-  --layers ${LAYERS} \
-  --data_preprocessing_num_proc ${NUM_PROC} \
-  --log_to_wandb \
-  --run_name ${RUN_NAME} \
-  --wandb_log_frequency ${WANDB_FREQ}
-
-echo "--- Run 4 finished. ---"
-
-
-#######################################
-#               RUN 5 (MAX_EX CHANGE)/32 EXP
-#######################################
-echo ">>>> MAX_EX 350M <<<"
-echo "--- Starting Run 5: Expansion Factor 32 ---"
-
-# === Set parameters for Run 3 ===
-MAX_EX=1953100
-MAX_EX_MB=$(( (MAX_EX * 64) / 1000000 ))
-EXPANSION_FACTOR=32
-RUN_NAME="smollm2-sparsify-lmsys-${MAX_EX_MB}M-token-${LAYERS}-layers-${EXPANSION_FACTOR}-expansion-${K}-k"
-
-# === Launch Run 5 ===
-torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-  --split "train" \
-  --max_examples ${MAX_EX} \
-  --expansion_factor ${EXPANSION_FACTOR} \
-  --k ${K} \
-  --batch_size ${BATCH_SIZE} \
-  --grad_acc_steps ${GRAD_ACC_STEPS} \
-  --ctx_len ${CTX_LEN} \
-  --layers ${LAYERS} \
-  --data_preprocessing_num_proc ${NUM_PROC} \
-  --log_to_wandb \
-  --run_name ${RUN_NAME} \
-  --wandb_log_frequency ${WANDB_FREQ}
-
-echo "--- Run 5 finished. ---"
-
-
-
-echo "--- Job finished. ---"
+echo "--- All runs completed. Job finished. ---"
