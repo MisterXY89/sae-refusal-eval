@@ -1,8 +1,78 @@
 #!/usr/bin/env python3
+
+import sys
 import argparse
 import subprocess
 import pandas as pd
-import sys
+
+from tqdm import tqdm
+
+import lm_eval
+from lm_eval.utils import setup_logging
+
+from steering.sae.sparsify import (
+    make_steered_hf_lm, generate_with_steered_hf
+)
+from utils.generation import HF_GENERATION_KW_ARGS
+from data_tools.instructions import (
+    get_harmful_instructions, get_harmless_instructions
+)
+from evaluation.refusal import (
+    get_refusal_scores, get_wildguard_refusal_score
+)
+
+TEST_SIZE = 100
+harmless_inst_train, harmless_inst_test = get_harmless_instructions()
+harmful_inst_train, harmful_inst_test = get_harmful_instructions()
+
+def refusal_eval(args):
+    steer_cfg = {
+        "layers.4.mlp": {
+            "action": args.action,
+            "sparse_model": args.sparse_model,
+            "feature_index": args.feature_index,
+            "steering_coefficient": args.steering_coefficient,
+            "sae_id": "",
+            "description": f"steering feature {args.feature_index}",
+        }
+    }
+    
+    hf_lm = make_steered_hf_lm(
+        steer_cfg,
+        pretrained=args.pretrained,
+        device="cuda:0",
+        batch_size=32,
+        # can be overwritten
+        # gen_kwargs={},
+        seed=42,
+    )
+
+    steered_generation_harmful = [
+        generate_with_steered_hf(hf_lm, harmful_inst) 
+        for harmful_inst in tqdm(harmful_inst_test[:TEST_SIZE])
+    ]
+    rr_2 = get_refusal_scores(steered_generation_harmful)
+    rr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmful)
+    
+    steered_generation_harmless = [
+        generate_with_steered_hf(hf_lm, harmless_inst) 
+        for harmless_inst in tqdm(harmless_inst_test[:TEST_SIZE])
+    ]
+    orr_2 = get_refusal_scores(steered_generation_harmless)
+    orr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmless)
+
+    results = {
+        "steer_cfg": steer_cfg,
+        "rr": rr,
+        "rr_2": rr_2,
+        "orr": orr,
+        "orr_2": orr_2
+    }
+
+    with open(f"/home/tilman.kerl/mech-interp/src/results/perfomance/refusal/{args.sparse_model}.json", as f):
+        f.write(results)
+        
+    
 
 def main():
     p = argparse.ArgumentParser(
@@ -90,6 +160,10 @@ def main():
     print("→ Running:", " ".join(cmd), file=sys.stderr)
     subprocess.run(cmd, check=True)
 
+    #now we can also run the rr & orr eval:
+    refusal_eval(args)
+    
+
 if __name__ == "__main__":
     """
 1) Vanilla HF eval
@@ -131,22 +205,20 @@ python run_eval.py \
   --batch_size 8
     """
     main()
-
-
-
+"""
 python run_eval.py \
   --model_type steered \
   --pretrained HuggingFaceTB/SmolLM2-135M \
   --loader sparsify \
   --action add \
-  --sparse_model /home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/smollm2-sparsify-lmsys-419M-token-18-layers-16-expansion-64-k \
-  --hookpoint layers.8 \
+  --sparse_model /home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/smollm2-sparsify-lmsys-419M-token-18-layers-16-expansion-64-k/ \
+  --hookpoint layers.18 \
   --feature_index 17 \
   --steering_coefficient 10.0 \
-  --tasks mmlu 
-# ,realtoxicityprompts,toxigen,hendrycks_ethics \
+  --tasks mmlu \
   --device cuda:0 \
   --wandb_project MA-sae-eval \
   --limit 10 \
   --batch_size 8
     
+"""
