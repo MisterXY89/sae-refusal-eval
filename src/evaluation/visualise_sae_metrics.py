@@ -89,6 +89,8 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
 
     for i, dataset in enumerate(eval_datasets):
         print(f"  [{i+1}/{len(eval_datasets)}] Generating dashboard for eval_dataset: '{dataset}'")
+
+        print(dataset)
         
         df_group = df[df['eval_dataset'] == dataset].copy()
         
@@ -108,13 +110,14 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
         g1.fig.suptitle(f"Reconstruction Quality (EV) on '{dataset}'", y=1.03, fontsize=20, weight='bold')
         g1.set_axis_labels("Training Tokens (Millions)", "Explained Variance (EV)")
         g1.set_titles("Expansion Factor: {col_name}")
-        g1.set(ylim=(0.8, 1.0))
+        g1.set(ylim=(0.5, 1.0))
         g1.despine(left=True)
 
         save_filename_1 = f"dashboard_1_EV_eval_on_{sanitize_filename(dataset)}.png"
         save_path_1 = Path(results_path) / save_filename_1
-        plt.savefig(save_path_1, dpi=150, bbox_inches='tight')
+        plt.savefig(save_path_1, dpi=150, bbox_inches='tight')        
         print(f"    -> Plot 1 saved to '{save_path_1}'")
+        plt.show()
         plt.close(g1.fig)
 
         # --- Plot 2: Feature Health (Bar Plot Grid) ---
@@ -142,6 +145,7 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
         save_path_2 = Path(results_path) / save_filename_2
         plt.savefig(save_path_2, dpi=150, bbox_inches='tight')
         print(f"    -> Plot 2 saved to '{save_path_2}'")
+        plt.show()
         plt.close(g2.fig)
 
         # --- Plot 3: Reconstruction vs. Sparsity Trade-off (Scatter Plot) ---
@@ -167,7 +171,33 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
         save_path_3 = Path(results_path) / save_filename_3
         plt.savefig(save_path_3, dpi=150, bbox_inches='tight')
         print(f"    -> Plot 3 saved to '{save_path_3}'")
+        plt.show()
         plt.close(g3.fig)
+
+    sns.lineplot(
+        data=df, x="eval_dataset", y="explained_variance",
+        hue="sae_train_dataset", 
+        markers=True,
+        style="sae_expansion_factor",
+    )
+
+    pivot_ev = df.pivot_table(
+        values="explained_variance",
+        index="sae_train_dataset",
+        columns="eval_dataset",
+        aggfunc="mean"
+    )
+    
+    # Plot heatmap
+    plt.figure(figsize=(8, 5))
+    sns.heatmap(pivot_ev, annot=True, fmt=".3f", cmap="YlGnBu", cbar_kws={'label': 'Explained Variance'})
+    plt.title("Average Explained Variance by SAE Train Dataset × Evaluation Dataset", fontsize=14)
+    plt.xlabel("Evaluation Dataset")
+    plt.ylabel("SAE Train Dataset")
+    plt.tight_layout()
+    plt.show()
+
+
 
 
 if __name__ == '__main__':
@@ -177,6 +207,7 @@ if __name__ == '__main__':
     
     # 1. Load the data
     results_df = load_sae_results(RESULTS_DIRECTORY)
+
     
     # 2. Generate and save the visualizations, grouped by evaluation dataset
     if not results_df.empty:
