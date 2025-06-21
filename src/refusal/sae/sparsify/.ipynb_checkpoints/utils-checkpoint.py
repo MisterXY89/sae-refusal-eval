@@ -43,10 +43,11 @@ def identify_top_features(results, layers, N=5):
     with harmful (positive d) and harmless (negative d) prompts.
     """
     records = []
-    for layer in layers:
-        stats = results[layer]
-        harmful = stats["harmful_reps"]
-        harmless = stats["harmless_reps"]
+    for layer_idx, layer in enumerate(layers):
+        stats = results[layer_idx]
+        # print(stats)
+        harmful = stats["stats"]["harmful_reps"]
+        harmless = stats["stats"]["harmless_reps"]
         # compute Cohen's d
         n_h, latent_dim = harmful.shape
         n_c, _ = harmless.shape
@@ -62,6 +63,7 @@ def identify_top_features(results, layers, N=5):
         for dim, val in enumerate(d):
             records.append({
                 "layer": layer,
+                "
                 "latent_dim": dim,
                 "Cohen's d": val
             })
@@ -92,7 +94,7 @@ def build_comparison_df(mean_harmful, mean_harmless, diff):
     return df
 
 
-def visualize_latent_differences(harmful, harmless, diff):
+def visualize_latent_differences(harmful, harmless, diff, sae_name):
     """
     Visualize heatmaps for harmful and harmless representations, and their differences.
 
@@ -168,4 +170,5 @@ def visualize_latent_differences(harmful, harmless, diff):
         fig.colorbar(im2, ax=ax_row[2])
 
     plt.tight_layout()
+    plt.savefig(f"/home/tilman.kerl/mech-interp/src/results/visualizations/feature_id_{sae_name}")
     plt.show()

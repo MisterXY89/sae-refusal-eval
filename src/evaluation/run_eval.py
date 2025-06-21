@@ -5,6 +5,7 @@ import argparse
 import subprocess
 import pandas as pd
 
+import json
 from tqdm import tqdm
 
 import lm_eval
@@ -27,7 +28,7 @@ harmful_inst_train, harmful_inst_test = get_harmful_instructions()
 
 def refusal_eval(args):
     steer_cfg = {
-        "layers.4.mlp": {
+        args.hookpoint: {
             "action": args.action,
             "sparse_model": args.sparse_model,
             "feature_index": args.feature_index,
@@ -53,13 +54,17 @@ def refusal_eval(args):
     ]
     rr_2 = get_refusal_scores(steered_generation_harmful)
     rr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmful)
+
+    print(steered_generation_harmful)
     
     steered_generation_harmless = [
         generate_with_steered_hf(hf_lm, harmless_inst) 
         for harmless_inst in tqdm(harmless_inst_test[:TEST_SIZE])
     ]
+
+    print(steered_generation_harmless)
     orr_2 = get_refusal_scores(steered_generation_harmless)
-    orr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmless)
+    orr = get_wildguard_refusal_score(harmless_inst_test[:TEST_SIZE], steered_generation_harmless)
 
     results = {
         "steer_cfg": steer_cfg,
@@ -69,8 +74,11 @@ def refusal_eval(args):
         "orr_2": orr_2
     }
 
-    with open(f"/home/tilman.kerl/mech-interp/src/results/perfomance/refusal/{args.sparse_model}.json", as f):
-        f.write(results)
+    print(results)
+
+    sae_name = args.sparse_model.split("/")[1]
+    with open(f"/home/tilman.kerl/mech-interp/src/results/perfomance/refusal/{sae_name}.json", "w") as f:
+        json.dump(results, f, indent=2)
         
     
 
@@ -124,6 +132,9 @@ def main():
 
     args = p.parse_args()
 
+    refusal_eval(args)
+
+    """
     # If steered and user provided individual params, build the CSV:
     if args.model_type == "steered" and args.loader and args.action:
         df = pd.DataFrame({
@@ -143,6 +154,9 @@ def main():
     else:
         model_args = f"pretrained={args.pretrained}"
 
+    sae_name = args.sparse_model.split("/")[1]
+    output_path = f"/home/tilman.kerl/mech-interp/src/results/perfomance/downstream/{sae_name}.json"
+
     # Assemble the lm_eval command
     cmd = [
         "lm_eval",
@@ -150,6 +164,7 @@ def main():
         "--model_args", model_args,
         "--tasks", args.tasks,
         "--device", args.device,
+        "--output_path", output_path,
         # "--wandb_args", f"project={args.wandb_project}",
     ]
     if args.limit:
@@ -162,6 +177,7 @@ def main():
 
     #now we can also run the rr & orr eval:
     refusal_eval(args)
+    """
     
 
 if __name__ == "__main__":

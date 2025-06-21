@@ -234,10 +234,22 @@ def post_train_eval(
     print(f"Base Model: {model_name}")
     print(f"Evaluation Dataset: {eval_dataset} (split: {split})")
     print(f"Layer Index: {layer_idx}, Max Samples: {max_samples}, Max Length: {max_len}\n")
+
+    # "smollm2-sparsify-PRE-419M-token-6_25-layers-16-expansion-64-k/layers.6"
+
+    _fn_lookup = {
+        "EQ": "MIX",
+        "INS": "MIX",
+        "PRE": "MIX",
+        "lmsys": "LMSYS", 
+    }
     
-    # Validate checkpoint exists
-    # Note: user-specific path structure is preserved here
-    full_checkpoint_path = Path(f"/home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/{sae_checkpoint_dir}")
+    train_ds_token = sae_checkpoint_dir.split("-")[2]
+    train_ds_folder_name = _fn_lookup[train_ds_token]
+    
+    
+    # Validate checkpoint exists    
+    full_checkpoint_path = Path(f"/home/tilman.kerl/mech-interp/src/train/{train_ds_folder_name}/checkpoints/{sae_checkpoint_dir}")
     if not full_checkpoint_path.exists():
         raise FileNotFoundError(f"SAE checkpoint not found: {full_checkpoint_path}")
     
@@ -317,14 +329,16 @@ def post_train_eval(
     # --- Save results to JSON ---
     results_dir = Path("results/saes")
     results_dir.mkdir(parents=True, exist_ok=True)
+
+    eval_ds_token = eval_dataset.split("/")[1]
     
     # Use the name of the checkpoint directory for the json file
-    json_filename = sae_checkpoint_dir.split("/layers.")[0] + ".json"
+    basename = sae_checkpoint_dir.split("/layers.")[0]
+    json_filename = f"{basename}_layer_{layer_idx}_ds_{eval_ds_token}.json"
     save_path = results_dir / json_filename
     
     with open(save_path, 'w') as f:
         json.dump(metrics, f, indent=2)
-    print(f"\nMetrics successfully saved to {save_path}")
 
     print("\n=== Evaluation Complete ===")
 
