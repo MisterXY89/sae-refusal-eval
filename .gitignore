@@ -25,3 +25,5 @@ thesis/
 src/0.37.0
 
 **/checkpoints/*
+src/results/saes/features/*.json
+src/results/saes/features/*.json
