@@ -1,0 +1,19 @@
+{
+  "explained_variance": 0.8647715207101945,
+  "fraction_var_unexplained": 0.13522847928980555,
+  "mse": 2.6555331157698276,
+  "cosine_similarity": 0.9256615106583087,
+  "activation_sparsity_l0": 0.006944444444444444,
+  "weight_sparsity": 5.594889444182627e-05,
+  "dead_features_pct": 0.035698784722222224,
+  "dead_features_count": 329,
+  "total_latents": 9216,
+  "eval_dataset": "datablations/c4-filter-small",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "layer": 6,
+  "sae_train_dataset": "INS",
+  "sae_token_size": "249M",
+  "sae_expansion_factor": 16,
+  "sae_k_value": 64,
+  "sae_checkpoint_name": "smollm2-sparsify-INS-249M-token-6_25-layers-16-expansion-64-k/layers.6"
+}
