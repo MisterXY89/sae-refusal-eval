@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=grid-smollm2-SAE
+#SBATCH --job-name=mix-grid-smollm2-SAE
 #SBATCH --partition=GPU-a100
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
@@ -20,7 +20,7 @@ MAX_EXAMPLES_LIST=(6557940 3906200 1953100 781250)
 EXPANSION_FACTOR_LIST=(8 16 32)
 
 MODEL="HuggingFaceTB/SmolLM2-135M"
-DATASET_BASE="MisterXY89"
+DATASET_BASE="MisterXY89/SmolLM-lmsys-mixtures"
 TRAIN_SPLITS=(pre_dominant_70_30 instruction_dominant_30_70 balanced_50_50)
 # short tags for names
 SPLIT_TAGS=(PRE INS EQ)
@@ -28,7 +28,7 @@ SPLIT_TAGS=(PRE INS EQ)
 LAYERS=(6 25)
 # helper string for the run-name
 LAYERS_TAG="$(IFS=_; echo "${LAYERS[*]}")"   # -> "6_25"
-"
+
 NUM_PROC=4
 
 K=64
@@ -48,7 +48,7 @@ export HF_HOME=/share/tilman.kerl/huggingface
 for s_idx in "${!TRAIN_SPLITS[@]}"; do
     SPLIT_NAME="${TRAIN_SPLITS[$s_idx]}"
     SPLIT_TAG="${SPLIT_TAGS[$s_idx]}"
-    DATASET="${DATASET_BASE}/${SPLIT_NAME}"
+    DATASET="${DATASET_BASE}" #/${SPLIT_NAME}"
 
     echo "################  DATASET = ${DATASET}  ################"
 
@@ -61,7 +61,7 @@ for s_idx in "${!TRAIN_SPLITS[@]}"; do
             echo "==> Run ${RUN_NAME}"
 
             torchrun --nproc_per_node=${SLURM_NTASKS_PER_NODE} -m sparsify ${MODEL} ${DATASET} \
-              --split "train[:${TOTAL_MAX}]" \
+              --split "${SPLIT_NAME}[:${TOTAL_MAX}]" \
               --max_examples ${MAX_EX} \
               --expansion_factor ${EXPANSION_FACTOR} \
               --k ${K} \
