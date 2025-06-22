@@ -1,4 +1,5 @@
 import os
+import subprocess
 from dataclasses import dataclass, field
 from typing import Dict
 
@@ -44,6 +45,29 @@ class ConfigSingleton:
             cls._instance = Config()
         return cls._instance
 
+
+def set_hf_paths():
+    path = "/share/tilman.kerl/huggingface"
+    exports = {
+        "HF_DATASETS_CACHE": f"{path}/datasets",
+        "TRANSFORMERS_CACHE":    f"{path}/models",
+        "HUGGINGFACE_HUB_CACHE": f"{path}/hub",
+        "HF_TOKEN":              config.credentials.hf_token,
+    }
+
+    # set in current Python process
+    for k, v in exports.items():
+        os.environ[k] = v
+
+    # also export in any spawned bash shells (e.g. notebook ! calls)
+    for k, v in exports.items():
+        subprocess.run(
+            f"export {k}={v}",
+            shell=True,
+            executable="/bin/bash",
+            env=os.environ  # ensure subprocess sees the same env
+        )
+    
 
 # global instance --> avoid repeated instantiation
 config = ConfigSingleton.get_instance()

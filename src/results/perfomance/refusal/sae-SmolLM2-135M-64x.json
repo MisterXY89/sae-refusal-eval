@@ -1,16 +1,14 @@
 {
   "steer_cfg": {
-    "layers.0.mlp": {
+    "layers.24.mlp": {
       "action": "add",
       "sparse_model": "EleutherAI/sae-SmolLM2-135M-64x",
       "feature_index": 25,
-      "steering_coefficient": 4.0,
+      "steering_coefficient": 13.0,
       "sae_id": "",
       "description": "steering feature 25"
     }
   },
-  "rr": 0.01,
-  "rr_2": 0.0,
-  "orr": 0.07,
-  "orr_2": 0.0
+  "rr": 0.0,
+  "orr": 0.0
 }

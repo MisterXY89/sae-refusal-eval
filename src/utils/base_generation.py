@@ -6,7 +6,7 @@ class BaseModelGenerator:
         self.tokenizer = AutoTokenizer.from_pretrained(checkpoint)
         self.model = AutoModelForCausalLM.from_pretrained(
             checkpoint,
-            device_map="auto",
+            device_map="cuda:0",
             torch_dtype=dtype
         ).eval()
 
@@ -19,4 +19,6 @@ class BaseModelGenerator:
                 pad_token_id=self.tokenizer.eos_token_id,
                 **gen_kwargs
             )
-        return self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        response = self.tokenizer.decode(output_ids[0], skip_special_tokens=True)
+        clean_response = response.split(prompt)[-1]
+        return clean_response

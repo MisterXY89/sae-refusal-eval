@@ -21,9 +21,9 @@ SPARSE_MODELS=(
 )
 
 # HuggingFaceTB/SmolLM2-135M
-PRE_TRAINED_MODEL="HuggingFaceTB/SmolLM2-135M-Instruct"
+PRE_TRAINED_MODEL="HuggingFaceTB/SmolLM2-135M"
 
-HOOKPOINTS=(layers.0.mlp)
+HOOKPOINTS=(layers.24.mlp)
 FEATURE_INDICES=(25)
 
 # -------- payload -------------------------------------------------
@@ -42,7 +42,7 @@ python -m evaluation.run_eval \
   --sparse_model "$SPARSE_MODEL" \
   --hookpoint "$HOOKPOINT" \
   --feature_index "$FEATURE_INDEX" \
-  --steering_coefficient 4.0 \
+  --steering_coefficient 13.0 \
   --tasks mmlu,hellaswag \
   --batch_size 64 \
   --device cuda:0 \

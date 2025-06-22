@@ -1,9 +1,15 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from pathlib import Path
-import json
 import re
+import json
+from pathlib import Path
+
+import pandas as pd
+import numpy as np 
+
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
+
+import seaborn as sns
+
 
 def parse_token_size(token_str: str) -> float:
     """
@@ -68,6 +74,81 @@ def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
     print("Data loaded and processed successfully.")
     return df
 
+
+def plot_data_dependence_heatmap(
+    df: pd.DataFrame,
+    metric_name: str,
+    results_path: Path = "results/visualizations/",
+    title: str = None,
+    cbar_label: str = None,
+    cmap: str = "Blues",
+    fmt: str = ".4f",
+    save_plot: bool = True,
+    show_plot: bool = True,
+):
+    """
+    Generates and saves a heatmap for a given metric, pivoted by dataset.
+
+    Args:
+        df (pd.DataFrame): The input dataframe containing the metric data.
+        metric_name (str): The column name of the metric to plot (e.g., "explained_variance").
+        results_path (Path): The path to the directory where the plot will be saved.
+        title (str, optional): The title of the plot. If None, a default is generated.
+        cbar_label (str, optional): The label for the color bar. If None, a default is generated.
+        cmap (str, optional): The colormap for the heatmap. Defaults to "Blues".
+        fmt (str, optional): The string format for annotations. Defaults to ".4f".
+        save_plot (bool, optional): Whether to save the plot to a file. Defaults to True.
+        show_plot (bool, optional): Whether to display the plot. Defaults to True.
+    """
+
+    results_path = Path(results_path)
+    
+    # --- 1. Data Pivoting ---
+    pivot_df = df.pivot_table(
+        values=metric_name,
+        index="sae_train_dataset",
+        columns="eval_dataset",
+        aggfunc="mean",
+    )
+
+    # --- 2. Sensible Defaults for Labels ---
+    # Create a nice label from the metric name (e.g., "explained_variance" -> "Explained Variance")
+    if cbar_label is None:
+        cbar_label = metric_name.replace('_', ' ').title()
+    
+    if title is None:
+        title = f"Average {cbar_label} by SAE Train Dataset × Evaluation Dataset"
+
+    # --- 3. Plotting ---
+    plt.figure(figsize=(8, 5))
+    sns.heatmap(
+        pivot_df,
+        annot=True,
+        fmt=fmt,
+        cmap=cmap,
+        cbar_kws={'label': cbar_label}
+    )
+    plt.title(title, fontsize=14)
+    plt.xlabel("Evaluation Dataset")
+    plt.ylabel("SAE Train Dataset")
+    plt.tight_layout()
+
+    # --- 4. Saving and Displaying ---
+    if save_plot:
+        # Create a descriptive filename (e.g., "avg_explained_variance_across_ds.png")
+        save_filename = f"avg_{metric_name}_across_ds.png"
+        save_path = results_path / save_filename
+        # Ensure the directory exists
+        results_path.mkdir(parents=True, exist_ok=True)
+        plt.savefig(save_path, dpi=150, bbox_inches='tight')
+        print(f"Plot saved to {save_path}")
+
+    if show_plot:
+        plt.show()
+    
+    # Close the plot to free up memory, especially important in a loop
+    plt.close()
+
 def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results/visualizations/"):
     """
     Generates and saves a separate, more interpretable dashboard for each 
@@ -98,6 +179,7 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
         g1 = sns.catplot(
             data=df_group,
             x='sae_token_size_mil',
+            # y="cosine_similarity",
             y='explained_variance',
             hue='sae_train_dataset',
             col='sae_expansion_factor',
@@ -174,27 +256,27 @@ def visualize_sae_results_grouped(df: pd.DataFrame, results_path: str = "results
         plt.show()
         plt.close(g3.fig)
 
-    sns.lineplot(
-        data=df, x="eval_dataset", y="explained_variance",
-        hue="sae_train_dataset", 
-        markers=True,
-        style="sae_expansion_factor",
-    )
-
     pivot_ev = df.pivot_table(
         values="explained_variance",
         index="sae_train_dataset",
         columns="eval_dataset",
-        aggfunc="mean"
+        aggfunc="mean",
     )
     
     # Plot heatmap
     plt.figure(figsize=(8, 5))
-    sns.heatmap(pivot_ev, annot=True, fmt=".3f", cmap="YlGnBu", cbar_kws={'label': 'Explained Variance'})
+    sns.heatmap(
+        # YlGnBu
+        pivot_ev, annot=True, fmt=".4f", cmap="Blues", cbar_kws={'label': 'Explained Variance'},
+        # norm=LogNorm()
+    )
     plt.title("Average Explained Variance by SAE Train Dataset × Evaluation Dataset", fontsize=14)
     plt.xlabel("Evaluation Dataset")
     plt.ylabel("SAE Train Dataset")
-    plt.tight_layout()
+    plt.tight_layout()        
+    _save_filename = f"avg_explained_var_across_ds.png"
+    _save_path = Path(results_path) / _save_filename
+    plt.savefig(_save_path, dpi=150, bbox_inches='tight')
     plt.show()
 
 

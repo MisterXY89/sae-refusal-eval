@@ -70,7 +70,7 @@ class RefusalDirectionSteering:
         proj = torch.einsum("bld,d->bl", out, vec).unsqueeze(-1) * vec
         return out - proj
 
-    def generate(self, prompt, intervention="addition", coef=1.0, max_new_tokens=64, **kwargs):
+    def generate(self, prompt, intervention="addition", coef=1.0, max_new_tokens=8, **kwargs):
         if self.direction is None:
             raise ValueError("Must compute or load direction first.")
         if intervention not in {"addition", "ablation"}:
@@ -88,41 +88,13 @@ class RefusalDirectionSteering:
                     **inputs,
                     max_new_tokens=max_new_tokens,
                     pad_token_id=self.tokenizer.eos_token_id,
+                    # eos_token_id=self.tokenizer.pad_token_id,
                     do_sample=True,
-                    temperature=0.3,
-                    top_k=50, 
-                    top_p=0.95,
+                    temperature=0.7,
+                    # top_k=50, 
+                    # top_p=0.95,
                     **kwargs
                 )
             return self.tokenizer.decode(out[0, input_len:], skip_special_tokens=True)
         finally:
             handle.remove()
-
-    def generate_with_addition_loop(self, prompt, coef=1.0, max_new_tokens=64):
-        if self.direction is None:
-            raise ValueError("Must compute or load direction first.")
-
-        vec = self.direction.to(self.device)
-        prompt_text = self._format(prompt)
-        inputs = self.tokenizer(prompt_text, return_tensors="pt").to(self.device)
-
-        input_ids = inputs["input_ids"]
-        attention_mask = inputs["attention_mask"]
-        all_ids = input_ids.clone()
-
-        def hook_fn(_, __, out):
-            out = out.clone()
-            out[:, -1, :] += coef * vec
-            return out
-
-        for _ in range(max_new_tokens):
-            handle = self.model.model.layers[self.layer].mlp.register_forward_hook(hook_fn)
-            with torch.no_grad():
-                outputs = self.model(input_ids=all_ids, attention_mask=attention_mask)
-            handle.remove()
-
-            next_token = outputs.logits[:, -1, :].argmax(dim=-1, keepdim=True)
-            all_ids = torch.cat([all_ids, next_token], dim=1)
-            attention_mask = torch.cat([attention_mask, torch.ones_like(next_token)], dim=1)
-
-        return self.tokenizer.decode(all_ids[0, input_ids.shape[1]:], skip_special_tokens=True)

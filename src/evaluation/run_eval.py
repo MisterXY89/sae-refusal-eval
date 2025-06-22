@@ -19,7 +19,7 @@ from data_tools.instructions import (
     get_harmful_instructions, get_harmless_instructions
 )
 from evaluation.refusal import (
-    get_refusal_scores, get_wildguard_refusal_score
+    get_refusal_scores, get_wildguard_refusal_score, get_semantic_refusal_score
 )
 
 TEST_SIZE = 100
@@ -31,7 +31,7 @@ def refusal_eval(args):
         args.hookpoint: {
             "action": args.action,
             "sparse_model": args.sparse_model,
-            "feature_index": args.feature_index,
+            "feature_index": 11args.feature_index,
             "steering_coefficient": args.steering_coefficient,
             "sae_id": "",
             "description": f"steering feature {args.feature_index}",
@@ -53,25 +53,27 @@ def refusal_eval(args):
         for harmful_inst in tqdm(harmful_inst_test[:TEST_SIZE])
     ]
     rr_2 = get_refusal_scores(steered_generation_harmful)
-    rr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmful)
+    # rr = get_wildguard_refusal_score(harmful_inst_test[:TEST_SIZE], steered_generation_harmful)
+    rr = get_semantic_refusal_score(steered_generation_harmful)
 
-    print(steered_generation_harmful)
+    # print(steered_generation_harmful)
     
     steered_generation_harmless = [
         generate_with_steered_hf(hf_lm, harmless_inst) 
         for harmless_inst in tqdm(harmless_inst_test[:TEST_SIZE])
     ]
 
-    print(steered_generation_harmless)
+    # print(steered_generation_harmless)
     orr_2 = get_refusal_scores(steered_generation_harmless)
-    orr = get_wildguard_refusal_score(harmless_inst_test[:TEST_SIZE], steered_generation_harmless)
+    # orr = get_wildguard_refusal_score(harmless_inst_test[:TEST_SIZE], steered_generation_harmless)
+    orr = get_semantic_refusal_score(steered_generation_harmless)
 
     results = {
         "steer_cfg": steer_cfg,
         "rr": rr,
-        "rr_2": rr_2,
+        # "rr_2": rr_2,
         "orr": orr,
-        "orr_2": orr_2
+        # "orr_2": orr_2
     }
 
     print(results)
@@ -134,7 +136,7 @@ def main():
 
     refusal_eval(args)
 
-    """
+    
     # If steered and user provided individual params, build the CSV:
     if args.model_type == "steered" and args.loader and args.action:
         df = pd.DataFrame({
@@ -155,6 +157,7 @@ def main():
         model_args = f"pretrained={args.pretrained}"
 
     sae_name = args.sparse_model.split("/")[1]
+    """
     output_path = f"/home/tilman.kerl/mech-interp/src/results/perfomance/downstream/{sae_name}.json"
 
     # Assemble the lm_eval command

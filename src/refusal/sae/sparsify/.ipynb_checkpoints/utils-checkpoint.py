@@ -1,26 +1,17 @@
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-
-import numpy as np
-import pandas as pd
-
-import numpy as np
-import pandas as pd
-
-import numpy as np
-import pandas as pd
-
-def compute_effect_sizes(results, layer):
+def compute_effect_sizes(results, layer, epsilon: float = 1e-8):
     """
     Given the dict output from analyze_latent_reps, compute Cohen's d for each latent dimension.
     Returns a numpy array cohens_d of shape [latent_dim].
     """
-    harmful = results[layer]["harmful_reps"]   # shape [num_harmful, latent_dim]
-    harmless = results[layer]["harmless_reps"] # shape [num_harmless, latent_dim]
+    harmful = results[layer]["stats"]["harmful_reps"]   # shape [num_harmful, latent_dim]
+    harmless = results[layer]["stats"]["harmless_reps"] # shape [num_harmless, latent_dim]
     n_h, n_dim = harmful.shape
-    n_c, _     = harmless.shape
+    n_c, _ = harmless.shape
 
     # means and variances
     mu_h = harmful.mean(axis=0)
@@ -35,49 +26,52 @@ def compute_effect_sizes(results, layer):
 
     cohens_d = (mu_h - mu_c) / pooled_std
     cohens_d = np.nan_to_num(cohens_d)  # replace nan→0
-    return cohens_d
 
-def identify_top_features(results, layers, N=5):
+    fisher = (mu_h - mu_c)**2 / (var_h + var_c + epsilon)
+    
+    return cohens_d, fisher
+
+
+def identify_top_features(
+    results,
+    layers,
+    N: int = 5,
+    rank_metric: str = "cohens_d"
+):
     """
-    Compute effect sizes and return the top N dimensions most associated
-    with harmful (positive d) and harmless (negative d) prompts.
+    Compute effect sizes (Cohen's d & Fisher) per layer, then
+    return the top N dimensions most associated with harmful
+    (positive) and harmless (negative) along the chosen metric.
+
+    Args:
+      results: output dict from analyze_latent_reps
+      layers: list of layer identifiers
+      N: number of top dims to return
+      metric: one of "cohens_d" or "fisher"
     """
-    records = []
-    for layer_idx, layer in enumerate(layers):
-        stats = results[layer_idx]
-        # print(stats)
-        harmful = stats["stats"]["harmful_reps"]
-        harmless = stats["stats"]["harmless_reps"]
-        # compute Cohen's d
-        n_h, latent_dim = harmful.shape
-        n_c, _ = harmless.shape
-        mu_h = harmful.mean(axis=0)
-        mu_c = harmless.mean(axis=0)
-        var_h = harmful.var(axis=0, ddof=1)
-        var_c = harmless.var(axis=0, ddof=1)
-        pooled = np.sqrt(((n_h-1)*var_h + (n_c-1)*var_c) / (n_h + n_c - 2))
-        pooled[pooled == 0] = np.nan
-        d = (mu_h - mu_c) / pooled
-        d = np.nan_to_num(d)
-        # collect per-dimension
-        for dim, val in enumerate(d):
-            records.append({
+    # validate
+    metric = metric.lower()
+    if metric not in ("cohens_d", "fisher"):
+        raise ValueError("metric must be 'cohens_d' or 'fisher'")
+
+    recs = []
+    for idx, layer in enumerate(layers):
+        d, fisher = compute_effect_sizes(results, idx)
+        for dim, (dv, fv) in enumerate(zip(d, fisher)):
+            recs.append({
                 "layer": layer,
-                "
                 "latent_dim": dim,
-                "Cohen's d": val
+                "cohens_d": dv,
+                "fisher": fv
             })
 
-    df_all = pd.DataFrame(records)
-    # top harmful = largest positive d
-    top_harmful = df_all.nlargest(N, "Cohen's d").reset_index(drop=True)
-    # top harmless = most negative d
-    top_harmless = df_all.nsmallest(N, "Cohen's d").reset_index(drop=True)
-
+    df = pd.DataFrame(recs)
+    col = metric
     return {
-        "top_harmful": top_harmful,
-        "top_harmless": top_harmless
+        "top_harmful": df.nlargest(N, col).reset_index(drop=True),
+        "top_harmless": df.nsmallest(N, col).reset_index(drop=True)
     }
+
 
 def build_comparison_df(mean_harmful, mean_harmless, diff):
     latent_dim = len(diff)
@@ -170,5 +164,5 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         fig.colorbar(im2, ax=ax_row[2])
 
     plt.tight_layout()
-    plt.savefig(f"/home/tilman.kerl/mech-interp/src/results/visualizations/feature_id_{sae_name}")
+    plt.savefig(f"/home/tilman.kerl/mech-interp/src/results/visualizations/feature_id_{sae_name}", dpi=150, bbox_inches='tight')
     plt.show()

@@ -1,0 +1,10 @@
+{
+    "HuggingFaceTB_SmolLM2-135M": {
+        "rr": 0.01,
+        "orr": 0.0
+    },
+    "HuggingFaceTB_SmolLM2-135M-Instruct": {
+        "rr": 0.06,
+        "orr": 0.0
+    }
+}

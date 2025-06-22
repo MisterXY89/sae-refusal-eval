@@ -1,6 +1,0 @@
-INFO 06-21 12:32:15 [__init__.py:239] Automatically detected platform cuda.
-usage: run_eval.py [-h] --model_type {hf,steered} --pretrained PRETRAINED [--steer_path STEER_PATH] [--loader LOADER]
-                   [--action ACTION] [--sparse_model SPARSE_MODEL] [--hookpoint HOOKPOINT] [--feature_index FEATURE_INDEX]
-                   [--steering_coefficient STEERING_COEFFICIENT] [--tasks TASKS] [--device DEVICE] [--wandb_project WANDB_PROJECT]
-                   [--limit LIMIT] [--batch_size BATCH_SIZE]
-run_eval.py: error: argument --batch_size: invalid int value: 'auto'
