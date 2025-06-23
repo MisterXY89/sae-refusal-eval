@@ -26,6 +26,7 @@ def make_steered_hf_lm(
                         "feature_index": int,
                         "steering_coefficient": float,
                         "sae_id": str,
+                        "loader": str,
                         "description": str,
                     }
       pretrained:    HuggingFace repo name
@@ -41,7 +42,7 @@ def make_steered_hf_lm(
     rows = []
     for hookpoint, info in steer_config.items():
         rows.append({
-            "loader":       "sparsify",
+            "loader":       info["loader"],
             "action":       info["action"],
             "sparse_model": info["sparse_model"],
             "hookpoint":    hookpoint,
@@ -79,7 +80,7 @@ def make_steered_hf_lm(
 
 def generate_with_steered_hf(hf_lm_: HFLM, prompt: str):
     # assumes hf_lm = make_steered_hf_lm(...) 
-    steered = hf_lm_.model  # this is your AutoModelForCausalLM inside SteeredModel
+    steered = hf_lm_.model  # this is AutoModelForCausalLM inside SteeredModel
 
     # prompt = "Once upon a time in a haunted castle,"
     tokens = hf_lm_.tokenizer(prompt, return_tensors="pt").to(steered.device)
@@ -87,6 +88,7 @@ def generate_with_steered_hf(hf_lm_: HFLM, prompt: str):
     # generate with all your usual kwargs
     generated = steered.generate(
         **tokens,
+        pad_token_id=hf_lm_.tokenizer.eos_token_id,
         # max_new_tokens=100,
         # do_sample=True,        # enable sampling
         # temperature=0.7,       # randomness control
@@ -96,4 +98,4 @@ def generate_with_steered_hf(hf_lm_: HFLM, prompt: str):
 
     text = hf_lm_.tokenizer.decode(generated[0], skip_special_tokens=True)
     # print(text)
-    return text
+    return text.split(prompt)[-1]

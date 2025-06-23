@@ -50,8 +50,8 @@ def identify_top_features(
       metric: one of "cohens_d" or "fisher"
     """
     # validate
-    metric = metric.lower()
-    if metric not in ("cohens_d", "fisher"):
+    rank_metric = rank_metric.lower()
+    if rank_metric not in ("cohens_d", "fisher"):
         raise ValueError("metric must be 'cohens_d' or 'fisher'")
 
     recs = []
@@ -66,7 +66,7 @@ def identify_top_features(
             })
 
     df = pd.DataFrame(recs)
-    col = metric
+    col = rank_metric
     return {
         "top_harmful": df.nlargest(N, col).reset_index(drop=True),
         "top_harmless": df.nsmallest(N, col).reset_index(drop=True)
@@ -124,7 +124,8 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         # 1) Harmful
         im0 = ax_row[0].imshow(
             harm,
-            cmap="PRGn",
+            # cmap="PRGn",
+            cmap="Blues", 
             aspect="auto",
             interpolation="nearest"      # no smoothing between pixels
         )
@@ -139,7 +140,8 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         # 2) Harmless
         im1 = ax_row[1].imshow(
             safe,
-            cmap="PRGn",
+            # cmap="PRGn",
+            cmap="Blues", 
             aspect="auto",
             interpolation="nearest"
         )

@@ -65,15 +65,15 @@ def _load_tok_and_model(model_name: str, quant: bool = False):
     )
     return _tok, _model
 
-def _load_saes(layers, sae_path: str, is_local:bool = True):
-    load_fun = Sae.load_from_disk if is_local else Sae.load_from_hub
-    
+def _load_saes(layers, sae_path: str, is_local:bool = True):    
     # load SAEs for each layer
     # /layers.{layer}
     get_hookpoint = lambda l: f"layers.{l}" if is_local else f"layers.{l}.mlp"
     saes = {
-        layer: load_fun(
-            f"{sae_path}",
+        layer: Sae.load_from_disk(
+            f"{sae_path}/{get_hookpoint(layer)}", device="cuda:0"
+        ) if is_local else Sae.load_from_hub(
+            f"{sae_path}", 
             hookpoint=get_hookpoint(layer),
             device="cuda:0"
         )

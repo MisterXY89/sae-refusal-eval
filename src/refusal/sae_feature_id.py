@@ -30,14 +30,6 @@ from evaluation.sae_eval import compute_sae_stats
 harmless_inst_train, harmless_inst_test = get_harmless_instructions()
 harmful_inst_train, harmful_inst_test = get_harmful_instructions()
 
-SAES = [
-    {"name": "INS", "path": "","exp_factor": 16,"max_length": 64,"is_local": True},
-    {"name": "PRE", "path": "EleutherAI/sae-SmolLM2-135M-64x","exp_factor": 64,"max_length": 1024,"is_local": False},
-    {"name": "MIX_PRE","path": "","exp_factor": 16, "max_length": 64,"is_local": True},
-    {"name": "MIX_INS", "path": "","exp_factor": 16, "max_length": 1024, "is_local": True},
-    {"name": "MIX_EQ", "path": "","exp_factor": 16, "max_length": 64,"is_local": True}
-]
-
 LOCAL_LAYERS = [6, 25]
 HUB_LAYERS = list(range(0,30,3))
 
@@ -61,7 +53,7 @@ def id_refusal_feature_for_sae(
     if not sae_config["path"]: 
         return 0
 
-    sae_name = sae_config["path"].split("/")[-1]
+    sae_name = f"{sae_config['name']}-layer-{sae_config['layer']}"
 
     dataset = _build_ds(n_inst_train=n_inst_train)
 

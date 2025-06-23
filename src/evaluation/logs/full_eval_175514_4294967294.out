@@ -1,0 +1,150 @@
+INFO 06-23 10:31:10 [__init__.py:239] Automatically detected platform cuda.
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 44150.57it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:01<00:09,  1.02s/it]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:01<00:05,  1.48it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:04,  1.74it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:02<00:03,  1.90it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.01it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:03<00:01,  2.09it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.14it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:04<00:00,  2.17it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.19it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00,  2.20it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:05<00:00,  1.98it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.27it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.26it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.26it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.24it/s]
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 45343.83it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.22it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:04,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.22it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 41323.19it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.27it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:04,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.24it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 42153.81it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.28it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.13it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.16it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.14it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.17it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.18it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.15it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.18it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:04,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.19it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.20it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.19it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.20it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.19it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.21it/s]
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 47127.01it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.28it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.26it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.26it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.25it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.19it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.18it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.20it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.22it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.26it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.23it/s]
+Fetching 2 files:   0%|                                                                  | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|███████████████████████████████████████████████████████| 2/2 [00:00<00:00, 44384.17it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:03,  2.27it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.24it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.17it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.18it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.17it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.12it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.12it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.15it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 90%|███████████████████████████████████████████████████████████████████▌       | 9/10 [00:04<00:00,  2.15it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.17it/s]100%|██████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.16it/s]
+  0%|                                                                                   | 0/10 [00:00<?, ?it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 10%|███████▌                                                                   | 1/10 [00:00<00:04,  2.16it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 20%|███████████████                                                            | 2/10 [00:00<00:03,  2.20it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 30%|██████████████████████▌                                                    | 3/10 [00:01<00:03,  2.21it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 40%|██████████████████████████████                                             | 4/10 [00:01<00:02,  2.21it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 50%|█████████████████████████████████████▌                                     | 5/10 [00:02<00:02,  2.22it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 60%|█████████████████████████████████████████████                              | 6/10 [00:02<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 70%|████████████████████████████████████████████████████▌                      | 7/10 [00:03<00:01,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+ 80%|████████████████████████████████████████████████████████████               | 8/10 [00:03<00:00,  2.23it/s]Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+slurmstepd: error: *** JOB 175514 ON a-a40-o-1 CANCELLED AT 2025-06-23T10:32:22 ***

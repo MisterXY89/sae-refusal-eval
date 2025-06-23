@@ -8,7 +8,7 @@ HF_GENERATION_KW_ARGS = {
     "do_sample": True,
     "temperature": 0.7,
     "top_k": 50,
-    "max_new_tokens": 100,
+    "max_new_tokens": 32,
 }
 
 

@@ -1,6 +1,8 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+from numpy import linspace, arange
+from matplotlib.ticker import MaxNLocator
 import pandas as pd
 
 def compute_effect_sizes(results, layer, epsilon: float = 1e-8):
@@ -50,8 +52,8 @@ def identify_top_features(
       metric: one of "cohens_d" or "fisher"
     """
     # validate
-    metric = metric.lower()
-    if metric not in ("cohens_d", "fisher"):
+    rank_metric = rank_metric.lower()
+    if rank_metric not in ("cohens_d", "fisher"):
         raise ValueError("metric must be 'cohens_d' or 'fisher'")
 
     recs = []
@@ -66,7 +68,7 @@ def identify_top_features(
             })
 
     df = pd.DataFrame(recs)
-    col = metric
+    col = rank_metric
     return {
         "top_harmful": df.nlargest(N, col).reset_index(drop=True),
         "top_harmless": df.nsmallest(N, col).reset_index(drop=True)
@@ -116,6 +118,8 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         axes = axes[None, :]
 
     for i in range(num_layers):
+        locator = MaxNLocator(nbins=5, integer=True)
+        
         harm = harmful_list[i]
         safe = harmless_list[i]
         d = diff_list[i]
@@ -124,7 +128,8 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         # 1) Harmful
         im0 = ax_row[0].imshow(
             harm,
-            cmap="PRGn",
+            # cmap="PRGn",
+            cmap="Blues", 
             aspect="auto",
             interpolation="nearest"      # no smoothing between pixels
         )
@@ -132,21 +137,24 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         ax_row[0].set_xlabel("Latent Dimension")
         ax_row[0].set_ylabel("Prompt Index")
         # draw a tick at every integer row
-        ax_row[0].set_yticks(np.arange(harm.shape[0]))
-        ax_row[0].set_yticklabels(np.arange(harm.shape[0]))
+        # ax_row[0].set_yticks(np.arange(harm.shape[0]))
+        # ax_row[0].set_yticklabels(np.arange(harm.shape[0]))
+        ax_row[0].yaxis.set_major_locator(locator)
         fig.colorbar(im0, ax=ax_row[0])
 
         # 2) Harmless
         im1 = ax_row[1].imshow(
             safe,
-            cmap="PRGn",
+            # cmap="PRGn",
+            cmap="Blues", 
             aspect="auto",
             interpolation="nearest"
         )
         ax_row[1].set_title(f"Harmless Prompts (Layer {i})")
         ax_row[1].set_xlabel("Latent Dimension")
-        ax_row[1].set_yticks(np.arange(safe.shape[0]))
-        ax_row[1].set_yticklabels(np.arange(safe.shape[0]))
+        # ax_row[1].set_yticks(np.arange(safe.shape[0]))
+        # ax_row[1].set_yticklabels(np.arange(safe.shape[0]))
+        ax_row[1].yaxis.set_major_locator(locator)
         fig.colorbar(im1, ax=ax_row[1])
 
         # 3) Difference (1×latent_dim)

@@ -33,6 +33,7 @@ def refusal_eval(args):
             "sparse_model": args.sparse_model,
             "feature_index": 11args.feature_index,
             "steering_coefficient": args.steering_coefficient,
+            "loader": args.loader,
             "sae_id": "",
             "description": f"steering feature {args.feature_index}",
         }

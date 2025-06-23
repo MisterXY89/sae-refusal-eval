@@ -1,0 +1,17 @@
+INFO 06-23 10:29:41 [__init__.py:239] Automatically detected platform cuda.
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+grid_feature_search.py 139 <module>
+grid_search(args.sparse_model, args.pretrained, args.layer, args.exp_factor)
+
+grid_feature_search.py 98 grid_search
+pretrained=pre_trained_model,
+
+NameError:
+name 'pre_trained_model' is not defined

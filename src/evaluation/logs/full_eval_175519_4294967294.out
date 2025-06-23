@@ -1,0 +1,117 @@
+INFO 06-23 10:35:28 [__init__.py:239] Automatically detected platform cuda.
+  0%|                                                                                               | 0/12288 [00:00<?, ?it/s]
+Fetching 2 files:   0%|                                                                                 | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 41734.37it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+  0%|                                                                                    | 1/12288 [00:12<43:08:19, 12.64s/it]
+Fetching 2 files:   0%|                                                                                 | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 49636.73it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+  0%|                                                                                    | 2/12288 [00:22<38:25:35, 11.26s/it]
+Fetching 2 files:   0%|                                                                                 | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 35696.20it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+  0%|                                                                                    | 3/12288 [00:33<36:41:07, 10.75s/it]
+Fetching 2 files:   0%|                                                                                 | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 49056.19it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+  0%|                                                                                    | 4/12288 [00:43<35:53:50, 10.52s/it]
+Fetching 2 files:   0%|                                                                                 | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 41943.04it/s]
+`pretrained` model kwarg is not of type `str`. Many other model arguments may be ignored. Please do not launch via accelerate or use `parallelize=True` if passing an existing model this way.
+Passed an already-initialized model through `pretrained`, assuming single-process call to evaluate() or custom distributed integration
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+slurmstepd: error: *** JOB 175519 ON a-a40-o-1 CANCELLED AT 2025-06-23T10:36:27 ***
