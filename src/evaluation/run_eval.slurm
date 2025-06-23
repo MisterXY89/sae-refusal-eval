@@ -16,15 +16,16 @@
 set -e
 
 # -------- checkpoint-specific parameters (index-aligned) ----------
+# EleutherAI/sae-SmolLM2-135M-64x
 SPARSE_MODELS=(
-  EleutherAI/sae-SmolLM2-135M-64x
+    /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k
 )
 
 # HuggingFaceTB/SmolLM2-135M
 PRE_TRAINED_MODEL="HuggingFaceTB/SmolLM2-135M"
 
-HOOKPOINTS=(layers.24.mlp)
-FEATURE_INDICES=(25)
+HOOKPOINTS=(layers.6)
+FEATURE_INDICES=(21)
 
 # -------- payload -------------------------------------------------
 ID=${SLURM_ARRAY_TASK_ID}

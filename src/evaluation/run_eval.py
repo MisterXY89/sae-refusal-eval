@@ -31,7 +31,7 @@ def refusal_eval(args):
         args.hookpoint: {
             "action": args.action,
             "sparse_model": args.sparse_model,
-            "feature_index": 11args.feature_index,
+            "feature_index": args.feature_index,
             "steering_coefficient": args.steering_coefficient,
             "loader": args.loader,
             "sae_id": "",
@@ -135,8 +135,6 @@ def main():
 
     args = p.parse_args()
 
-    refusal_eval(args)
-
     
     # If steered and user provided individual params, build the CSV:
     if args.model_type == "steered" and args.loader and args.action:
@@ -158,7 +156,7 @@ def main():
         model_args = f"pretrained={args.pretrained}"
 
     sae_name = args.sparse_model.split("/")[1]
-    """
+    
     output_path = f"/home/tilman.kerl/mech-interp/src/results/perfomance/downstream/{sae_name}.json"
 
     # Assemble the lm_eval command
@@ -181,7 +179,7 @@ def main():
 
     #now we can also run the rr & orr eval:
     refusal_eval(args)
-    """
+    
     
 
 if __name__ == "__main__":
