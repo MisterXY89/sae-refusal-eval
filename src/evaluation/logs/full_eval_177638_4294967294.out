@@ -1,0 +1,20 @@
+Saved combined steering vector to /home/tilman.kerl/mech-interp/src/steer_configs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k.pt
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 271 <module>
+main()
+
+run_eval.py 200 main
+refusal_eval(args)
+
+run_eval.py 74 refusal_eval
+hf_lm = SteeredModel(
+
+NameError:
+name 'SteeredModel' is not defined

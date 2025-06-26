@@ -1,0 +1,91 @@
+=== Running EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-6 ===
+Resolving path for hookpoint: layers.6
+Files found in /home/tilman.kerl/mech-interp/src/evaluation/results/EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-6/latents, skipping...
+Skipping neighbour creation
+INFO 06-25 16:05:53 __init__.py:207] Automatically detected platform cuda.
+INFO 06-25 16:06:01 config.py:549] This model supports multiple tasks: {'classify', 'generate', 'reward', 'embed', 'score'}. Defaulting to 'generate'.
+INFO 06-25 16:06:01 awq_marlin.py:114] The model is convertible to awq_marlin during runtime. Using awq_marlin kernel.
+INFO 06-25 16:06:01 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', speculative_config=None, tokenizer='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=5120, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=awq_marlin, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 06-25 16:06:02 cuda.py:229] Using Flash Attention backend.
+INFO 06-25 16:06:02 model_runner.py:1110] Starting to load model hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4...
+INFO 06-25 16:06:02 weight_utils.py:254] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/9 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  11% Completed | 1/9 [00:02<00:20,  2.60s/it]
+Loading safetensors checkpoint shards:  22% Completed | 2/9 [00:05<00:18,  2.71s/it]
+Loading safetensors checkpoint shards:  33% Completed | 3/9 [00:08<00:16,  2.75s/it]
+Loading safetensors checkpoint shards:  44% Completed | 4/9 [00:10<00:13,  2.76s/it]
+Loading safetensors checkpoint shards:  56% Completed | 5/9 [00:13<00:11,  2.76s/it]
+Loading safetensors checkpoint shards:  67% Completed | 6/9 [00:15<00:07,  2.49s/it]
+Loading safetensors checkpoint shards:  78% Completed | 7/9 [00:18<00:05,  2.56s/it]
+Loading safetensors checkpoint shards:  89% Completed | 8/9 [00:21<00:02,  2.68s/it]
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:22<00:00,  2.29s/it]
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:22<00:00,  2.53s/it]
+
+INFO 06-25 16:06:29 model_runner.py:1115] Loading model weights took 37.0968 GB
+INFO 06-25 16:06:34 worker.py:267] Memory profiling takes 4.24 seconds
+INFO 06-25 16:06:34 worker.py:267] the current vLLM instance can use total_gpu_memory (39.50GiB) x gpu_memory_utilization (0.90) = 35.55GiB
+INFO 06-25 16:06:34 worker.py:267] model weights take 37.10GiB; non_torch_memory takes 0.02GiB; PyTorch activation peak memory takes 1.25GiB; the rest of the memory reserved for KV Cache is -2.82GiB.
+INFO 06-25 16:06:34 executor_base.py:111] # cuda blocks: 0, # CPU blocks: 819
+INFO 06-25 16:06:34 executor_base.py:116] Maximum concurrency for 5120 tokens per request: 0.00x
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 469, in <module>
+[rank0]:     asyncio.run(run(args.run_cfg))
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 190, in run
+[rank0]:     return runner.run(main)
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 118, in run
+[rank0]:     return self._loop.run_until_complete(task)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+[rank0]:     return future.result()
+[rank0]:            ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 440, in run
+[rank0]:     await process_cache(
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 146, in process_cache
+[rank0]:     llm_client = Offline(
+[rank0]:                  ^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/clients/offline.py", line 62, in __init__
+[rank0]:     self.client = LLM(
+[rank0]:                   ^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/utils.py", line 1022, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+[rank0]:     self.llm_engine = self.engine_class.from_engine_args(
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/engine/llm_engine.py", line 489, in from_engine_args
+[rank0]:     engine = cls(
+[rank0]:              ^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/engine/llm_engine.py", line 276, in __init__
+[rank0]:     self._initialize_kv_caches()
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/engine/llm_engine.py", line 434, in _initialize_kv_caches
+[rank0]:     self.model_executor.initialize_cache(num_gpu_blocks, num_cpu_blocks)
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/executor/executor_base.py", line 122, in initialize_cache
+[rank0]:     self.collective_rpc("initialize_cache",
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
+[rank0]:     answer = run_method(self.driver_worker, method, args, kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/utils.py", line 2196, in run_method
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/worker/worker.py", line 291, in initialize_cache
+[rank0]:     raise_if_cache_size_invalid(num_gpu_blocks,
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/vllm/worker/worker.py", line 539, in raise_if_cache_size_invalid
+[rank0]:     raise ValueError("No available memory for the cache blocks. "
+[rank0]: ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializing the engine.
+[rank0]:[W625 16:06:35.821229003 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+=== Running EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-25 ===
+Resolving path for hookpoint: layers.25
+Files found in /home/tilman.kerl/mech-interp/src/evaluation/results/EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-25/latents, skipping...
+Skipping neighbour creation
+INFO 06-25 16:06:48 __init__.py:207] Automatically detected platform cuda.
+INFO 06-25 16:06:56 config.py:549] This model supports multiple tasks: {'reward', 'generate', 'score', 'classify', 'embed'}. Defaulting to 'generate'.
+INFO 06-25 16:06:56 awq_marlin.py:114] The model is convertible to awq_marlin during runtime. Using awq_marlin kernel.
+INFO 06-25 16:06:56 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', speculative_config=None, tokenizer='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=5120, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=awq_marlin, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 06-25 16:06:57 cuda.py:229] Using Flash Attention backend.
+INFO 06-25 16:06:57 model_runner.py:1110] Starting to load model hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4...
+INFO 06-25 16:06:58 weight_utils.py:254] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/9 [00:00<?, ?it/s]
+slurmstepd: error: *** JOB 176554 ON a-a100-qs-7 CANCELLED AT 2025-06-25T16:06:58 ***

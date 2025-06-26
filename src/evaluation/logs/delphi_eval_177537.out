@@ -1,0 +1,6 @@
+=== Running EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-6 ===
+Resolving path for hookpoint: layers.6
+Files found in /home/tilman.kerl/mech-interp/src/evaluation/results/EXP-smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layer-6/latents, skipping...
+Skipping neighbour creation
+OpenRouter does not support multiprocessing, setting pipeline_num_proc to 1
+Processing items: 0it [00:00, ?it/s]Processing items: 1it [00:35, 35.03s/it]Processing items: 2it [01:04, 31.67s/it]Processing items: 3it [01:30, 28.98s/it]Processing items: 4it [01:56, 27.94s/it]Processing items: 5it [02:19, 26.03s/it]Processing items: 6it [02:38, 23.72s/it]Processing items: 7it [02:57, 22.22s/it]slurmstepd: error: *** JOB 177537 ON avm-a100-d-10 CANCELLED AT 2025-06-25T22:27:44 ***

@@ -1,0 +1,31 @@
+Fetching 23 files:   0%|                                                                                                 | 0/23 [00:00<?, ?it/s]Fetching 23 files:   4%|███▊                                                                                     | 1/23 [00:00<00:05,  4.09it/s]Fetching 23 files:  30%|███████████████████████████                                                              | 7/23 [00:02<00:06,  2.49it/s]Fetching 23 files:  74%|█████████████████████████████████████████████████████████████████                       | 17/23 [00:02<00:00,  7.30it/s]Fetching 23 files: 100%|████████████████████████████████████████████████████████████████████████████████████████| 23/23 [00:02<00:00,  7.95it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 469, in <module>
+    asyncio.run(run(args.run_cfg))
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 396, in run
+    hookpoints, hookpoint_to_sparse_encode, model, transcode = load_artifacts(run_cfg)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 55, in load_artifacts
+    hookpoint_to_sparse_encode, transcode = load_hooks_sparse_coders(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/sparse_coders/sparse_model.py", line 35, in load_hooks_sparse_coders
+    hookpoint_to_sparse_encode, transcode = load_sparsify_hooks(
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/sparse_coders/load_sparsify.py", line 135, in load_sparsify_hooks
+    sparse_model_dict = load_sparsify_sparse_coders(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/sparse_coders/load_sparsify.py", line 102, in load_sparsify_sparse_coders
+    sparse_model_dict[hookpoint] = sparse_models[hookpoint].to(device)
+                                   ~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'layers.24.mlp,layers.27.mlp'

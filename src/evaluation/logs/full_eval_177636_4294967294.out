@@ -1,0 +1,25 @@
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 269 <module>
+main()
+
+run_eval.py 198 main
+refusal_eval(args)
+
+run_eval.py 48 refusal_eval
+saes = _load_saes([layer], args.sparse_model, is_local=args.is_local)
+
+run_eval.py 32 _load_saes
+saes = {
+
+run_eval.py 34 <dictcomp>
+Sae.load_from_disk(f"{sae_path}/{get_hookpoint(layer)}", device="cuda:0")
+
+NameError:
+name 'Sae' is not defined

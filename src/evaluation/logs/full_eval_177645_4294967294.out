@@ -1,0 +1,30 @@
+Saved combined steering vector to /home/tilman.kerl/mech-interp/src/steer_configs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k.pt
+Harmful:   0%|                                                                                                                                | 0/100 [00:00<?, ?it/s]
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 270 <module>
+main()
+
+run_eval.py 199 main
+refusal_eval(args)
+
+run_eval.py 82 refusal_eval
+steered_harm = [
+
+run_eval.py 83 <listcomp>
+generate_with_steered_hf(hf_lm, inst)
+
+sparsify.py 91 generate_with_steered_hf
+generated_ids = hf_lm_._model_generate(
+
+hf_steered.py 243 _model_generate
+return super()._model_generate(*args, **kwargs)
+
+TypeError:
+HFLM._model_generate() missing 3 required positional arguments: 'context', 'max_length', and 'stop'
+Harmful:   0%|                                                                                                                                | 0/100 [00:00<?, ?it/s]

@@ -1,0 +1,13 @@
+{
+  "steer_path": "/home/tilman.kerl/mech-interp/src/steer_configs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.pt",
+  "feature_indices": [
+    421
+  ],
+  "steering_coefficients": [
+    22.0
+  ],
+  "rr": 0.0,
+  "rr_2": 0.0,
+  "orr": 0.01,
+  "orr_2": 0.01
+}

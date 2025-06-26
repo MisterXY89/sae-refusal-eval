@@ -52,6 +52,7 @@ def get_prompt_representation(
         latent = sae.encode(hidden)
 
     per_token_acts = latent.top_acts  # e.g., shape [1, 32768, 32]
+    print(per_token_acts.shape)
     
     # Add a print statement to verify the shape during a run
     # print("Shape of latent.top_acts:", per_token_acts.shape)

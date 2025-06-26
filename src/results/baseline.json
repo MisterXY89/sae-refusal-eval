@@ -1,10 +1,26 @@
 {
     "HuggingFaceTB_SmolLM2-135M": {
         "rr": 0.01,
-        "orr": 0.0
+        "orr": 0.0,
+        "mmlu": 0.214, 
+        "hellaswag": 0.421
     },
     "HuggingFaceTB_SmolLM2-135M-Instruct": {
         "rr": 0.06,
-        "orr": 0.0
+        "orr": 0.0,
+        "mmlu": 0.293,
+        "hellaswag": 0.409,        
+    },    
+    "steered_HuggingFaceTB_SmolLM2-135M": {
+        "rr": 0.0,
+        "orr": 0.0,
+        "mmlu": 0.0, 
+        "hellaswag": 0.0
+    },
+    "steered_HuggingFaceTB_SmolLM2-135M-Instruct": {
+        "rr": 0.0,
+        "orr": 0.0,
+        "mmlu": 0.0,
+        "hellaswag": 0.0,
     }
 }

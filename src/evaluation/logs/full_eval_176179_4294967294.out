@@ -1,0 +1,52 @@
+INFO 06-24 13:07:49 [__init__.py:239] Automatically detected platform cuda.
+→ Wrote steering CSV to steer_config.csv
+→ Running: lm_eval --model steered --model_args pretrained=HuggingFaceTB/SmolLM2-135M,steer_path=steer_config.csv --tasks mmlu,hellaswag --device cuda:0 --output_path /home/tilman.kerl/mech-interp/src/results/perfomance/downstream/home.json --batch_size 64
+INFO 06-24 13:08:02 [__init__.py:239] Automatically detected platform cuda.
+2025-06-24:13:08:09 INFO     [__main__:440] Selected Tasks: ['hellaswag', 'mmlu']
+2025-06-24:13:08:09 INFO     [evaluator:185] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2025-06-24:13:08:09 INFO     [evaluator:223] Initializing steered model, with arguments: {'pretrained': 'HuggingFaceTB/SmolLM2-135M', 'steer_path': 'steer_config.csv'}
+2025-06-24:13:08:09 INFO     [models.huggingface:137] Using device 'cuda:0'
+2025-06-24:13:08:09 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
+Traceback (most recent call last):
+  File "/home/tilman.kerl/miniconda3/envs/refusal/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+             ^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/evaluator.py", line 226, in simple_evaluate
+    lm = lm_eval.api.registry.get_model(model).create_from_arg_string(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/api/model.py", line 151, in create_from_arg_string
+    return cls(**args, **args2)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/models/hf_steered.py", line 101, in __init__
+    steer_config = self.derive_steer_config(steer_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/lm-evaluation-harness/lm_eval/models/hf_steered.py", line 175, in derive_steer_config
+    steering_vector = sparse_coder.W_dec[feature_index]
+                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+IndexError: index 1500000 is out of bounds for dimension 0 with size 18432
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 225 <module>
+main()
+
+run_eval.py 178 main
+subprocess.run(cmd, check=True)
+
+subprocess.py 571 run
+raise CalledProcessError(retcode, process.args,
+
+subprocess.CalledProcessError:
+1
+['lm_eval', '--model', 'steered', '--model_args', 'pretrained=HuggingFaceTB/SmolLM2-135M,steer_path=steer_config.csv', '--tasks', 'mmlu,hellaswag', '--device', 'cuda:0', '--output_path', '/home/tilman.kerl/mech-interp/src/results/perfomance/downstream/home.json', '--batch_size', '64']

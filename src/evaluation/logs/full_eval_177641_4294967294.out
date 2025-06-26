@@ -1,0 +1,38 @@
+Saved combined steering vector to /home/tilman.kerl/mech-interp/src/steer_configs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k.pt
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 272 <module>
+main()
+
+run_eval.py 201 main
+refusal_eval(args)
+
+run_eval.py 75 refusal_eval
+hf_lm = SteeredModel(
+
+hf_steered.py 93 __init__
+super().__init__(pretrained=pretrained, device=device, **kwargs)
+
+huggingface.py 193 __init__
+self._create_model(
+
+huggingface.py 594 _create_model
+self._model = self.AUTO_MODEL_CLASS.from_pretrained(
+
+auto_factory.py 571 from_pretrained
+return model_class.from_pretrained(
+
+modeling_utils.py 279 _wrapper
+return func(*args, **kwargs)
+
+modeling_utils.py 4342 from_pretrained
+model = cls(config, *model_args, **model_kwargs)
+
+TypeError:
+LlamaForCausalLM.__init__() got an unexpected keyword argument 'seed'

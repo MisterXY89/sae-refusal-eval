@@ -160,7 +160,7 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         # 3) Difference (1×latent_dim)
         im2 = ax_row[2].imshow(
             d.reshape(1, -1),
-            cmap="PRGn", #coolwarm
+            cmap="Blues", #coolwarm
             aspect="auto",
             interpolation="nearest"
         )

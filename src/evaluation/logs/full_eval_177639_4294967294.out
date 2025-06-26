@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/tilman.kerl/mech-interp/src/evaluation/run_eval.py", line 14, in <module>
+    from lm_eval.models.steered import SteeredModel
+ModuleNotFoundError: No module named 'lm_eval.models.steered'

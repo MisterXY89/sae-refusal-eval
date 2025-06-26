@@ -1,0 +1,4 @@
+usage: run_eval.py [-h] --model_type {hf,steered} --pretrained PRETRAINED [--steer_path STEER_PATH] --loader {sparsify,sae_lens} --action {add,clamp} --sparse_model
+                   SPARSE_MODEL --hookpoint HOOKPOINT --feature_indices FEATURE_INDICES [FEATURE_INDICES ...] --steering_coefficients STEERING_COEFFICIENTS
+                   [STEERING_COEFFICIENTS ...] [--is_local] [--no_local] [--tasks TASKS] [--device DEVICE] [--batch_size BATCH_SIZE]
+run_eval.py: error: unrecognized arguments: --wandb_project MA-sae-eval

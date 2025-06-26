@@ -35,7 +35,7 @@ def refusal_eval(
     pretrained: str = "HuggingFaceTB/SmolLM2-135M" , 
     action: str = "add", 
     steering_coefficient: float = 3, 
-    test_size = 10
+    test_size = 20
 ):
     steer_cfg = {
         hookpoint: {
@@ -53,7 +53,7 @@ def refusal_eval(
         steer_cfg,
         pretrained=pretrained,
         device="cuda:0",
-        batch_size=32,
+        batch_size=64,
         seed=42, # gen_kwargs={},        
     )
 
@@ -88,7 +88,7 @@ def refusal_eval(
 def grid_search(sparse_model, pretrained, layer, exp_factor: int = 16):
     base_size = 576
     total_hidden_size = base_size * exp_factor
-    features = list(range(0, total_hidden_size, 100))
+    features = list(range(0, total_hidden_size, 66))
 
     hookpoint = f"layers.{layer}"
     if "EleutherAI" in sparse_model:
@@ -105,7 +105,7 @@ def grid_search(sparse_model, pretrained, layer, exp_factor: int = 16):
         search_results[feat_idx] = feat_results
 
     sae_name = pathlib.Path(sparse_model).name
-    out_path = f"/home/tilman.kerl/mech-interp/src/results/saes/features/grid_{sae_name}.json"
+    out_path = f"/home/tilman.kerl/mech-interp/src/results/saes/features/grid_{sae_name}-layer-{layer}.json"
     pathlib.Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w") as f:
         json.dump(search_results, f, indent=2)

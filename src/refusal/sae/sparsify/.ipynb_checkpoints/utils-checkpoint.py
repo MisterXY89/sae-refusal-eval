@@ -1,6 +1,8 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+from numpy import linspace, arange
+from matplotlib.ticker import MaxNLocator
 import pandas as pd
 
 def compute_effect_sizes(results, layer, epsilon: float = 1e-8):
@@ -116,6 +118,8 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         axes = axes[None, :]
 
     for i in range(num_layers):
+        locator = MaxNLocator(nbins=5, integer=True)
+        
         harm = harmful_list[i]
         safe = harmless_list[i]
         d = diff_list[i]
@@ -133,8 +137,9 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         ax_row[0].set_xlabel("Latent Dimension")
         ax_row[0].set_ylabel("Prompt Index")
         # draw a tick at every integer row
-        ax_row[0].set_yticks(np.arange(harm.shape[0]))
-        ax_row[0].set_yticklabels(np.arange(harm.shape[0]))
+        # ax_row[0].set_yticks(np.arange(harm.shape[0]))
+        # ax_row[0].set_yticklabels(np.arange(harm.shape[0]))
+        ax_row[0].yaxis.set_major_locator(locator)
         fig.colorbar(im0, ax=ax_row[0])
 
         # 2) Harmless
@@ -147,14 +152,15 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         )
         ax_row[1].set_title(f"Harmless Prompts (Layer {i})")
         ax_row[1].set_xlabel("Latent Dimension")
-        ax_row[1].set_yticks(np.arange(safe.shape[0]))
-        ax_row[1].set_yticklabels(np.arange(safe.shape[0]))
+        # ax_row[1].set_yticks(np.arange(safe.shape[0]))
+        # ax_row[1].set_yticklabels(np.arange(safe.shape[0]))
+        ax_row[1].yaxis.set_major_locator(locator)
         fig.colorbar(im1, ax=ax_row[1])
 
         # 3) Difference (1×latent_dim)
         im2 = ax_row[2].imshow(
             d.reshape(1, -1),
-            cmap="PRGn", #coolwarm
+            cmap="Blues", #coolwarm
             aspect="auto",
             interpolation="nearest"
         )

@@ -1,0 +1,2 @@
+Resolving path for hookpoint: layers.25
+Map (num_proc=128):   0%|                                  | 0/1554906 [00:00<?, ? examples/s]slurmstepd: error: *** JOB 176540 ON a-a100-qs-7 CANCELLED AT 2025-06-25T15:32:56 ***

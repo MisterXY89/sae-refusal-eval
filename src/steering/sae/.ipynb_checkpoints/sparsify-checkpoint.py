@@ -3,7 +3,7 @@ import tempfile
 import torch
 
 from lm_eval.models.huggingface import HFLM
-from lm_eval.models.hf_steered import SteeredModel
+from lm_eval.models.hf_steered import SteeredModel, steer
 
 from utils.generation import HF_GENERATION_KW_ARGS
 
@@ -38,6 +38,7 @@ def make_steered_hf_lm(
     Returns:
       An lm_eval.models.huggingface.HFLM ready for `simple_evaluate(...)`.
     """
+    print("DEPRECATED")
     # parse config into csv file
     rows = []
     for hookpoint, info in steer_config.items():
@@ -78,24 +79,23 @@ def make_steered_hf_lm(
     return hf_lm
 
 
-def generate_with_steered_hf(hf_lm_: HFLM, prompt: str):
-    # assumes hf_lm = make_steered_hf_lm(...) 
-    steered = hf_lm_.model  # this is AutoModelForCausalLM inside SteeredModel
+def generate_with_steered_hf(hf_lm_: HFLM, prompt: str) -> str:
+    steered = hf_lm_.model
+    hooks   = hf_lm_.hook_to_steer
 
-    # prompt = "Once upon a time in a haunted castle,"
+    # tokenize and move to model device
     tokens = hf_lm_.tokenizer(prompt, return_tensors="pt").to(steered.device)
+    pad_id = hf_lm_.tokenizer.eos_token_id
 
-    # generate with all your usual kwargs
-    generated = steered.generate(
-        **tokens,
-        pad_token_id=hf_lm_.tokenizer.eos_token_id,
-        # max_new_tokens=100,
-        # do_sample=True,        # enable sampling
-        # temperature=0.7,       # randomness control
-        # top_k=50,              # top‐k sampling
-        kwargs=HF_GENERATION_KW_ARGS,
-    )    
+    with torch.no_grad():
+        with steer(steered, hooks):
+            # apply steering hooks during generation
+            generated = steered.generate(
+                **tokens,
+                pad_token_id=pad_id,
+                **HF_GENERATION_KW_ARGS
+            )
 
     text = hf_lm_.tokenizer.decode(generated[0], skip_special_tokens=True)
-    # print(text)
-    return text.split(prompt)[-1]
+    return text[len(prompt):].strip() if text.startswith(prompt) else text.strip()
+    

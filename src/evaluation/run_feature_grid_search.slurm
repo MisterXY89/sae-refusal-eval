@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=SAE-feat-id
-#SBATCH --partition=GPU-a40
+#SBATCH --job-name=l6-SAE-feat-id
+#SBATCH --partition=GPU-a100
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:a40:1
+#SBATCH --gres=gpu:a100:1
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=32G
+#SBATCH --mem=64G
 #SBATCH --time=02:00:00
 #SBATCH --output=logs/full_eval_%A_%a.out
 #SBATCH --mail-user=tilman.kerl@tuwien.ac.at
@@ -14,8 +14,9 @@
 set -e
 
 # -------- checkpoint-specific parameters (index-aligned) ----------
-SPARSE_MODELS=(
-  EleutherAI/sae-SmolLM2-135M-64x
+# EleutherAI/sae-SmolLM2-135M-64x
+SPARSE_MODELS=( 
+    /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k
 )
 
 # HuggingFaceTB/SmolLM2-135M
@@ -39,5 +40,5 @@ cd /home/tilman.kerl/mech-interp/src
 python -m evaluation.grid_feature_search \
   --sparse_model "$SPARSE_MODEL" \
   --pretrained "$PRE_TRAINED_MODEL" \
-  --layer 24 \
-  --exp_factor 64
+  --layer 6 \
+  --exp_factor 32

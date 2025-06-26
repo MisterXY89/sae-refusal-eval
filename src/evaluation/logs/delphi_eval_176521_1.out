@@ -1,0 +1,64 @@
+Resolving path for hookpoint: layers.25
+Map (num_proc=128):   0%|                                      | 0/160 [00:00<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:00<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:00<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:00<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:00<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:01<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:01<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:01<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:01<?, ? examples/s]Map (num_proc=128):   0%|                                      | 0/160 [00:01<?, ? examples/s]Map (num_proc=128):   1%|▍                             | 2/160 [00:01<00:08, 17.64 examples/s]Map (num_proc=128):   1%|▍                             | 2/160 [00:08<10:55,  4.15s/ examples]
+multiprocess.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/multiprocess/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 678, in _write_generator_to_queue
+    for i, result in enumerate(func(**kwargs)):
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3558, in _map_single
+    batch = apply_function_on_filtered_inputs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3427, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/sparsify/data.py", line 81, in _tokenize_fn
+    raise ValueError(
+ValueError: Not enough data to create a single complete batch. Either allow the final batch to be returned, or supply more data.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 469, in <module>
+    asyncio.run(run(args.run_cfg))
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 406, in run
+    populate_cache(
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 304, in populate_cache
+    tokens = load_tokenized_data(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/mech-interp/src/delphi/delphi/utils.py", line 27, in load_tokenized_data
+    tokens_ds = chunk_and_tokenize(
+                ^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/sparsify/data.py", line 89, in chunk_and_tokenize
+    data = data.map(
+           ^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3259, in map
+    for rank, done, content in iflatmap_unordered(
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 718, in iflatmap_unordered
+    [async_result.get(timeout=0.05) for async_result in async_results]
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/datasets/utils/py_utils.py", line 718, in <listcomp>
+    [async_result.get(timeout=0.05) for async_result in async_results]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/multiprocess/pool.py", line 774, in get
+    raise self._value
+ValueError: Not enough data to create a single complete batch. Either allow the final batch to be returned, or supply more data.

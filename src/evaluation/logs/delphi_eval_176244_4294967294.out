@@ -1,0 +1,6 @@
+Fetching 23 files:   0%|                                                                | 0/23 [00:00<?, ?it/s]Fetching 23 files: 100%|████████████████████████████████████████████████████| 23/23 [00:00<00:00, 33196.49it/s]
+Resolving path for hookpoint: layers.24.mlp
+Files found in /home/tilman.kerl/mech-interp/src/evaluation/results/EXP-sae-SmolLM2-135M-64x/latents, skipping...
+Skipping neighbour creation
+INFO 06-24 17:31:20 __init__.py:207] Automatically detected platform cuda.
+slurmstepd: error: *** JOB 176244 ON a-a100-o-2 CANCELLED AT 2025-06-24T17:31:23 ***

@@ -1,0 +1,68 @@
+Fetching 23 files:   0%|                                                                                                                     | 0/23 [00:00<?, ?it/s]Fetching 23 files: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 23/23 [00:00<00:00, 275625.69it/s]
+Resolving path for hookpoint: layers.24.mlp
+Files found in /home/tilman.kerl/mech-interp/src/evaluation/results/smollm2-refusal/latents, skipping...
+Skipping neighbour creation
+INFO 06-24 16:45:24 __init__.py:207] Automatically detected platform cuda.
+INFO 06-24 16:45:31 config.py:549] This model supports multiple tasks: {'score', 'classify', 'generate', 'reward', 'embed'}. Defaulting to 'generate'.
+INFO 06-24 16:45:31 awq_marlin.py:114] The model is convertible to awq_marlin during runtime. Using awq_marlin kernel.
+INFO 06-24 16:45:31 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', speculative_config=None, tokenizer='hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=5120, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=awq_marlin, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=False, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 06-24 16:45:32 cuda.py:229] Using Flash Attention backend.
+INFO 06-24 16:45:32 model_runner.py:1110] Starting to load model hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4...
+INFO 06-24 16:45:33 weight_utils.py:254] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/9 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  11% Completed | 1/9 [00:02<00:23,  2.92s/it]
+Loading safetensors checkpoint shards:  22% Completed | 2/9 [00:06<00:21,  3.03s/it]
+Loading safetensors checkpoint shards:  33% Completed | 3/9 [00:08<00:17,  2.99s/it]
+Loading safetensors checkpoint shards:  44% Completed | 4/9 [00:11<00:14,  2.94s/it]
+Loading safetensors checkpoint shards:  56% Completed | 5/9 [00:14<00:11,  2.96s/it]
+Loading safetensors checkpoint shards:  67% Completed | 6/9 [00:17<00:08,  2.74s/it]
+Loading safetensors checkpoint shards:  78% Completed | 7/9 [00:20<00:05,  2.78s/it]
+Loading safetensors checkpoint shards:  89% Completed | 8/9 [00:23<00:02,  2.85s/it]
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:24<00:00,  2.36s/it]
+Loading safetensors checkpoint shards: 100% Completed | 9/9 [00:24<00:00,  2.70s/it]
+
+INFO 06-24 16:46:00 model_runner.py:1115] Loading model weights took 37.0968 GB
+INFO 06-24 16:46:05 worker.py:267] Memory profiling takes 4.47 seconds
+INFO 06-24 16:46:05 worker.py:267] the current vLLM instance can use total_gpu_memory (79.25GiB) x gpu_memory_utilization (0.90) = 71.33GiB
+INFO 06-24 16:46:05 worker.py:267] model weights take 37.10GiB; non_torch_memory takes 0.09GiB; PyTorch activation peak memory takes 1.25GiB; the rest of the memory reserved for KV Cache is 32.89GiB.
+INFO 06-24 16:46:05 executor_base.py:111] # cuda blocks: 6736, # CPU blocks: 819
+INFO 06-24 16:46:05 executor_base.py:116] Maximum concurrency for 5120 tokens per request: 21.05x
+INFO 06-24 16:46:08 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|                                                                                                           | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|██▊                                                                                                | 1/35 [00:00<00:28,  1.19it/s]Capturing CUDA graph shapes:   6%|█████▋                                                                                             | 2/35 [00:01<00:27,  1.18it/s]Capturing CUDA graph shapes:   9%|████████▍                                                                                          | 3/35 [00:02<00:26,  1.19it/s]Capturing CUDA graph shapes:  11%|███████████▎                                                                                       | 4/35 [00:03<00:25,  1.21it/s]Capturing CUDA graph shapes:  14%|██████████████▏                                                                                    | 5/35 [00:04<00:24,  1.23it/s]Capturing CUDA graph shapes:  17%|████████████████▉                                                                                  | 6/35 [00:04<00:23,  1.23it/s]Capturing CUDA graph shapes:  20%|███████████████████▊                                                                               | 7/35 [00:05<00:22,  1.25it/s]Capturing CUDA graph shapes:  23%|██████████████████████▋                                                                            | 8/35 [00:06<00:21,  1.25it/s]Capturing CUDA graph shapes:  26%|█████████████████████████▍                                                                         | 9/35 [00:07<00:20,  1.29it/s]Capturing CUDA graph shapes:  29%|████████████████████████████                                                                      | 10/35 [00:07<00:18,  1.32it/s]Capturing CUDA graph shapes:  31%|██████████████████████████████▊                                                                   | 11/35 [00:08<00:17,  1.34it/s]Capturing CUDA graph shapes:  34%|█████████████████████████████████▌                                                                | 12/35 [00:09<00:16,  1.36it/s]Capturing CUDA graph shapes:  37%|████████████████████████████████████▍                                                             | 13/35 [00:10<00:15,  1.38it/s]Capturing CUDA graph shapes:  40%|███████████████████████████████████████▏                                                          | 14/35 [00:10<00:15,  1.40it/s]Capturing CUDA graph shapes:  43%|██████████████████████████████████████████                                                        | 15/35 [00:11<00:14,  1.42it/s]Capturing CUDA graph shapes:  46%|████████████████████████████████████████████▊                                                     | 16/35 [00:12<00:13,  1.44it/s]Capturing CUDA graph shapes:  49%|███████████████████████████████████████████████▌                                                  | 17/35 [00:12<00:12,  1.49it/s]Capturing CUDA graph shapes:  51%|██████████████████████████████████████████████████▍                                               | 18/35 [00:13<00:11,  1.52it/s]Capturing CUDA graph shapes:  54%|█████████████████████████████████████████████████████▏                                            | 19/35 [00:13<00:10,  1.55it/s]Capturing CUDA graph shapes:  57%|████████████████████████████████████████████████████████                                          | 20/35 [00:14<00:09,  1.57it/s]Capturing CUDA graph shapes:  60%|██████████████████████████████████████████████████████████▊                                       | 21/35 [00:15<00:08,  1.60it/s]Capturing CUDA graph shapes:  63%|█████████████████████████████████████████████████████████████▌                                    | 22/35 [00:15<00:08,  1.62it/s]Capturing CUDA graph shapes:  66%|████████████████████████████████████████████████████████████████▍                                 | 23/35 [00:16<00:07,  1.65it/s]Capturing CUDA graph shapes:  69%|███████████████████████████████████████████████████████████████████▏                              | 24/35 [00:16<00:06,  1.67it/s]Capturing CUDA graph shapes:  71%|██████████████████████████████████████████████████████████████████████                            | 25/35 [00:17<00:05,  1.74it/s]Capturing CUDA graph shapes:  74%|████████████████████████████████████████████████████████████████████████▊                         | 26/35 [00:17<00:05,  1.79it/s]Capturing CUDA graph shapes:  77%|███████████████████████████████████████████████████████████████████████████▌                      | 27/35 [00:18<00:04,  1.85it/s]Capturing CUDA graph shapes:  80%|██████████████████████████████████████████████████████████████████████████████▍                   | 28/35 [00:18<00:03,  1.90it/s]Capturing CUDA graph shapes:  83%|█████████████████████████████████████████████████████████████████████████████████▏                | 29/35 [00:19<00:03,  1.95it/s]Capturing CUDA graph shapes:  86%|████████████████████████████████████████████████████████████████████████████████████              | 30/35 [00:19<00:02,  1.98it/s]Capturing CUDA graph shapes:  89%|██████████████████████████████████████████████████████████████████████████████████████▊           | 31/35 [00:20<00:01,  2.01it/s]Capturing CUDA graph shapes:  91%|█████████████████████████████████████████████████████████████████████████████████████████▌        | 32/35 [00:20<00:01,  2.03it/s]Capturing CUDA graph shapes:  94%|████████████████████████████████████████████████████████████████████████████████████████████▍     | 33/35 [00:21<00:00,  2.04it/s]Capturing CUDA graph shapes:  97%|███████████████████████████████████████████████████████████████████████████████████████████████▏  | 34/35 [00:21<00:00,  2.04it/s]Capturing CUDA graph shapes: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 35/35 [00:22<00:00,  2.02it/s]Capturing CUDA graph shapes: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 35/35 [00:22<00:00,  1.56it/s]
+INFO 06-24 16:46:31 model_runner.py:1562] Graph capturing finished in 22 secs, took 0.47 GiB
+INFO 06-24 16:46:31 llm_engine.py:436] init engine (profile, create kv cache, warmup model) took 30.34 seconds
+Processing items: 0it [00:00, ?it/s]Processing items: 1it [03:44, 224.89s/it]Processing items: 2it [03:52, 96.92s/it] Processing items: 44it [03:52,  5.28s/it]
+/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/site-packages/kaleido/__init__.py:14: UserWarning:
+
+
+
+Warning: You have Plotly version 5.24.1, which is not compatible with this version of Kaleido (1.0.0).
+
+This means that static image generation (e.g. `fig.write_image()`) will not work.
+
+Please upgrade Plotly to version 6.1.1 or greater, or downgrade Kaleido to version 0.2.1.
+
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 469, in <module>
+[rank0]:     asyncio.run(run(args.run_cfg))
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 190, in run
+[rank0]:     return runner.run(main)
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/runners.py", line 118, in run
+[rank0]:     return self._loop.run_until_complete(task)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/miniconda3/envs/refusal/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+[rank0]:     return future.result()
+[rank0]:            ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/__main__.py", line 451, in run
+[rank0]:     log_results(scores_path, visualize_path, run_cfg.hookpoints, run_cfg.scorers)
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/log/result_analysis.py", line 290, in log_results
+[rank0]:     import_plotly()
+[rank0]:   File "/home/tilman.kerl/mech-interp/src/delphi/delphi/log/result_analysis.py", line 37, in import_plotly
+[rank0]:     pio.kaleido.scope.mathjax = None  # https://github.com/plotly/plotly.py/issues/3469
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: AttributeError: 'NoneType' object has no attribute 'mathjax'
+[rank0]:[W624 16:50:24.646580769 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())

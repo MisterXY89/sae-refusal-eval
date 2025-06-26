@@ -1,0 +1,57 @@
+INFO 06-24 11:38:07 [__init__.py:239] Automatically detected platform cuda.
+  0%|                                                                                                   | 0/212 [00:00<?, ?it/s]  0%|                                                                                                   | 0/212 [00:22<?, ?it/s]
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+grid_feature_search.py 142 <module>
+grid_search(args.sparse_model, args.pretrained, args.layer, args.exp_factor)
+
+grid_feature_search.py 99 grid_search
+feat_results = refusal_eval(
+
+grid_feature_search.py 52 refusal_eval
+hf_lm = make_steered_hf_lm(
+
+sparsify.py 63 make_steered_hf_lm
+steered = SteeredModel(
+
+hf_steered.py 93 __init__
+super().__init__(pretrained=pretrained, device=device, **kwargs)
+
+huggingface.py 193 __init__
+self._create_model(
+
+huggingface.py 594 _create_model
+self._model = self.AUTO_MODEL_CLASS.from_pretrained(
+
+auto_factory.py 571 from_pretrained
+return model_class.from_pretrained(
+
+modeling_utils.py 279 _wrapper
+return func(*args, **kwargs)
+
+modeling_utils.py 4399 from_pretrained
+) = cls._load_pretrained_model(
+
+modeling_utils.py 4793 _load_pretrained_model
+caching_allocator_warmup(model_to_load, expanded_device_map, factor=2 if hf_quantizer is None else 4)
+
+modeling_utils.py 5799 caching_allocator_warmup
+device_memory = torch.cuda.mem_get_info(index)[0]
+
+memory.py 738 mem_get_info
+return torch.cuda.cudart().cudaMemGetInfo(device)
+
+__init__.py 396 cudart
+_lazy_init()
+
+__init__.py 319 _lazy_init
+torch._C._cuda_init()
+
+RuntimeError:
+No CUDA GPUs are available
