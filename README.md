@@ -1,4 +1,6 @@
-# Sparse Autoencoder for Feature Learning
+# Evaluation of Sparse Autoencoder-based Refusal Features in LLMs A Dataset-dependence Study 
+
+SmolLM2-135M - 
 
 Contains code, data & results.
 
