@@ -15,6 +15,7 @@
 set -e
 
 # ALL SAEs:
+# sae-SmolLM2-135M-64x
 # /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k
 # /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k
 # /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k
@@ -22,25 +23,26 @@ set -e
 
 # -------- checkpoint-specific parameters (index-aligned) ----------
 SPARSE_MODELS=(
-    sae-SmolLM2-135M-64x
+    /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k
+    /home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k
 )
 PRE_TRAINED_MODEL="HuggingFaceTB/SmolLM2-135M"
 
 HOOKPOINTS=(
     layers.6
-    layers.24
+    layers.25
 )
 
 # each element may be a space-separated list of indices
 FEATURE_INDICES=(
-    "928 730 606 376 125 703168"
-    "421 "
+    "928 730 186 506 510 703 180"
+    "169 217 2"
 )
 
 # corresponding lists of coefficients
 STEERING_COEFS=(
-    "16.0 15.0 15.0 15.0 16.0"
-    "22.0"
+    "14.0 14.0 14.0 14.0 14.0 14.0 14.0"
+    "15.0 15.0 17.0"
 )
 
 # load conda and activate environment

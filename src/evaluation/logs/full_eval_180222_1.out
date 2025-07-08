@@ -1,0 +1,30 @@
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 207 <module>
+main()
+
+run_eval.py 152 main
+refusal_eval(args)
+
+run_eval.py 47 refusal_eval
+saes  = _load_saes([layer], args.sparse_model, is_local=args.is_local)
+
+run_eval.py 30 _load_saes
+return {
+
+run_eval.py 32 <dictcomp>
+Sae.load_from_disk(f"{sae_path}/{get_hook(layer)}", device="cuda:0")
+
+sparse_coder.py 142 load_from_disk
+with open(path / "cfg.json", "r") as f:
+
+FileNotFoundError:
+2
+No such file or directory
+/layers.24/cfg.json

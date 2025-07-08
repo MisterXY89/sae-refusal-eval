@@ -1,0 +1,13 @@
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 24 <module>
+random.seed(seed)
+
+NameError:
+name 'random' is not defined

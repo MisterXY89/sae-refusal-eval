@@ -1,0 +1,19 @@
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 241 <module>
+main()
+
+run_eval.py 186 main
+refusal_eval(args)
+
+run_eval.py 60 refusal_eval
+combined = torch.stack(vecs, 0).sum(0).to(device=dev, dtype=vanilla_lm.model.dtype)
+
+UnboundLocalError:
+cannot access local variable 'vanilla_lm' where it is not associated with a value

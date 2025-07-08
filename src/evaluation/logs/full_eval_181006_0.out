@@ -1,0 +1,27 @@
+Saved steer config to /home/tilman.kerl/mech-interp/src/steer_configs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.pt
+Harmful:   0%|                                                                                                           | 0/100 [00:00<?, ?it/s]Harmful:   0%|                                                                                                           | 0/100 [00:00<?, ?it/s]
+
+-------------------------------------------------------------------------------
+<frozen runpy> 198 _run_module_as_main
+
+
+<frozen runpy> 88 _run_code
+
+
+run_eval.py 240 <module>
+main()
+
+run_eval.py 185 main
+refusal_eval(args)
+
+run_eval.py 134 refusal_eval
+harmful_data  = eval_list(harmful_inst_test,  'Harmful')
+
+run_eval.py 116 eval_list
+cos = compute_cos(inst)                          # why: per-instruction layer shift
+
+run_eval.py 107 compute_cos
+raw = torch.dot(v_n, s_n).item()
+
+RuntimeError:
+dot : expected both vectors to have same dtype, but found BFloat16 and Float
