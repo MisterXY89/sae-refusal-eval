@@ -1,0 +1,2215 @@
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.59it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.69it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless:  95%|█████████▌| 95/100 [00:57<00:03,  1.64it/s]IOPub message rate exceeded.
+The Jupyter server will temporarily stop sending output
+to the client in order to avoid crashing it.
+To change this limit, set the config variable
+`--ServerApp.iopub_msg_rate_limit`.
+
+Current values:
+ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+ServerApp.rate_limit_window=3.0 (secs)
+
+Harmful: 100%|██████████| 100/100 [01:05<00:00,  1.52it/s]
+Harmless: 100%|██████████| 100/100 [01:26<00:00,  1.15it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=8 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=9 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=9 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+
+rr:  0.03 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=9 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.72it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.69it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=9 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.69it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.69it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [00:58<00:00,  1.72it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:27<00:00,  1.15it/s]
+Harmless: 100%|██████████| 100/100 [01:17<00:00,  1.28it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:03<00:00,  1.59it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:03<00:00,  1.58it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.59it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:06<00:00,  1.50it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:10<00:00,  1.41it/s]
+Harmless: 100%|██████████| 100/100 [01:09<00:00,  1.43it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:09<00:00,  1.43it/s]
+Harmless: 100%|██████████| 100/100 [01:10<00:00,  1.43it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:10<00:00,  1.42it/s]
+Harmless: 100%|██████████| 100/100 [01:10<00:00,  1.42it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:07<00:00,  1.48it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=5 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=5 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=5 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=5 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=6 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.04
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=6 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=6 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=6 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=6 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=7 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=7 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=7 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=7 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless:  83%|████████▎ | 83/100 [00:49<00:10,  1.65it/s]IOPub message rate exceeded.
+The Jupyter server will temporarily stop sending output
+to the client in order to avoid crashing it.
+To change this limit, set the config variable
+`--ServerApp.iopub_msg_rate_limit`.
+
+Current values:
+ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+ServerApp.rate_limit_window=3.0 (secs)
+
+Harmful: 100%|██████████| 100/100 [01:26<00:00,  1.15it/s]
+Harmful: 100%|██████████| 100/100 [01:03<00:00,  1.56it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.01 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.69it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=4 | C=15
+
+IOPub message rate exceeded.
+The Jupyter server will temporarily stop sending output
+to the client in order to avoid crashing it.
+To change this limit, set the config variable
+`--ServerApp.iopub_msg_rate_limit`.
+
+Current values:
+ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+ServerApp.rate_limit_window=3.0 (secs)
+
+Harmless: 100%|██████████| 100/100 [01:06<00:00,  1.50it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.6 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:22<00:00,  1.21it/s]
+Harmless: 100%|██████████| 100/100 [01:23<00:00,  1.20it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.60it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.04 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.03 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.04 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:58<00:00,  1.70it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.03 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=1 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=2 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.68it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=3 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=4 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.03
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.04 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=5 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+
+rr:  0.02 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=6 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:07<00:00,  1.49it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.60it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.04 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=7 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.66it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+
+rr:  0.01 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.pt
+
+Harmful: 100%|██████████| 100/100 [00:59<00:00,  1.67it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.01 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=8 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.60it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.02
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:00<00:00,  1.65it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.01 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.60it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:05<00:00,  1.53it/s]
+Harmless: 100%|██████████| 100/100 [01:03<00:00,  1.58it/s]
+
+rr:  0.02 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=9 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:00<00:00,  1.64it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=3
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.02 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=6
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.63it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=9
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.61it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.61it/s]
+
+rr:  0.0 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=12
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+Harmless: 100%|██████████| 100/100 [01:01<00:00,  1.62it/s]
+
+rr:  0.0 orr:  0.01
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json
+[RUNNING] smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k@layers.25 | N=10 | C=15
+Saved steer config to refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.pt
+
+Harmful: 100%|██████████| 100/100 [01:01<00:00,  1.64it/s]
+Harmless: 100%|██████████| 100/100 [01:02<00:00,  1.60it/s]
+
+rr:  0.03 orr:  0.0
+Results written to /home/tilman.kerl/mech-interp/src/results/perfomance/refusal/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25.json

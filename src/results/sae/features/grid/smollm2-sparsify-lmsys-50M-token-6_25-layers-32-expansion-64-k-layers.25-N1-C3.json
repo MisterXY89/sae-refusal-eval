@@ -1,0 +1,23 @@
+{
+    "config": {
+        "pretrained": "HuggingFaceTB/SmolLM2-135M",
+        "device": "cuda",
+        "action": "refusal",
+        "hookpoint": "layers.25",
+        "layer": 25,
+        "sparse_model": "./train/LMSYS/checkpoints/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "is_local": true,
+        "feature_indices": [
+            6519
+        ],
+        "steering_coefficients": [
+            3
+        ],
+        "steer_path": "refusal_dirs/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.pt",
+        "out_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.json"
+    },
+    "results": {
+        "refusal_rate": 0.01,
+        "open_refusal_rate": 0.01
+    }
+}

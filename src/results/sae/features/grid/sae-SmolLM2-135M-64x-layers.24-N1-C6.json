@@ -1,0 +1,23 @@
+{
+    "config": {
+        "pretrained": "HuggingFaceTB/SmolLM2-135M",
+        "device": "cuda",
+        "action": "refusal",
+        "hookpoint": "layers.24",
+        "layer": 24,
+        "sparse_model": "EleutherAI/sae-SmolLM2-135M-64x",
+        "is_local": false,
+        "feature_indices": [
+            17419
+        ],
+        "steering_coefficients": [
+            6
+        ],
+        "steer_path": "refusal_dirs/sae-SmolLM2-135M-64x-layers.24-N1-C6.pt",
+        "out_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C6.json"
+    },
+    "results": {
+        "refusal_rate": 0.0,
+        "open_refusal_rate": 0.02
+    }
+}

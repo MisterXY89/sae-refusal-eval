@@ -1,0 +1,5258 @@
+[
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 6,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 9,
+        "rr": 0.05,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 9,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 6,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 1,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.04,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 1,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 1,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 6,
+        "rr": 0.04,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 6,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 2,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 9,
+        "rr": 0.03,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 9,
+        "rr": 0.03,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 9,
+        "rr": 0.04,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 12,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 4,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 10,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 1,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 6,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N1-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 8,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N8-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 9,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 8,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N8-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 15,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 3,
+        "rr": 0.03,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N8-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 6,
+        "rr": 0.03,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N2-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 3,
+        "rr": 0.02,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N7-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 15,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 5,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N5-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 1,
+        "C": 3,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N1-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 9,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N9-C9.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 5,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N5-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 6,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 4,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N4-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 6,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N6-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C15.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 7,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N7-C3.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 5,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.03,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N5-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N9-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 12,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C12.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 10,
+        "C": 6,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.25-N10-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N6-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 10,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k-layers.6-N10-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 3,
+        "rr": 0.0,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C3.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 2,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.25-N2-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 3,
+        "C": 9,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N3-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 2,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N2-C6.json"
+    },
+    {
+        "model": "smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 9,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k-layers.6-N9-C9.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 4,
+        "C": 12,
+        "rr": 0.02,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.6-N4-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C1.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 7,
+        "C": 15,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 7,
+        "C": 15,
+        "rr": 0.01,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N7-C15.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 3,
+        "C": 1,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N3-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.25",
+        "N": 1,
+        "C": 6,
+        "rr": 0.01,
+        "orr": 0.0,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k-layers.25-N1-C6.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.24",
+        "N": 9,
+        "C": 12,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.24-N9-C12.json"
+    },
+    {
+        "model": "sae-SmolLM2-135M-64x",
+        "hookpoint": "layers.6",
+        "N": 6,
+        "C": 1,
+        "rr": 0.0,
+        "orr": 0.02,
+        "result_path": "results/sae/features/grid/sae-SmolLM2-135M-64x-layers.6-N6-C1.json"
+    },
+    {
+        "model": "smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+        "hookpoint": "layers.6",
+        "N": 8,
+        "C": 9,
+        "rr": 0.0,
+        "orr": 0.01,
+        "result_path": "results/sae/features/grid/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k-layers.6-N8-C9.json"
+    }
+]

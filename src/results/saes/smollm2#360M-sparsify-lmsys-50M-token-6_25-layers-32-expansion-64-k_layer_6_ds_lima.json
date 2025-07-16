@@ -1,0 +1,19 @@
+{
+  "explained_variance": 0.9391818754613396,
+  "fraction_var_unexplained": 0.06081812453866042,
+  "mse": 1.0973174802249872,
+  "cosine_similarity": 0.9687704102398075,
+  "activation_sparsity_l0": 0.003472221050678816,
+  "weight_sparsity": 2.4866174499038607e-05,
+  "dead_features_pct": 0.04942491319444445,
+  "dead_features_count": 911,
+  "total_latents": 18432,
+  "eval_dataset": "GAIR/lima",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "layer": 6,
+  "sae_train_dataset": "lmsys",
+  "sae_token_size": "50M",
+  "sae_expansion_factor": 32,
+  "sae_k_value": 64,
+  "sae_checkpoint_name": "smollm2#360M-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k/layers.6"
+}

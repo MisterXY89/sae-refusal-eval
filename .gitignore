@@ -10,6 +10,9 @@ ma_env/
 .pytest_cache/
 .mypy_cache/
 
+
+**/log/**
+
 .vscode/
 
 .DS_Store
