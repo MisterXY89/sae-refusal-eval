@@ -11,7 +11,7 @@ ma_env/
 .mypy_cache/
 
 
-**/log/**
+**/logs/**
 
 .vscode/
 
