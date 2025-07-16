@@ -46,9 +46,10 @@ def id_refusal_feature_for_sae(
     n_inst_train: int = 100,
     layers = None,  # uses default
     model_name: str = "HuggingFaceTB/SmolLM2-135M",
-    visualise: bool = True,
+    visualise_top_features: bool = True,
+    visualise_latent_difference: bool = False,
     save: bool = True,
-    rank_metric: str = "fisher", # "cohens_d"
+    rank_metric: str = "cohens_d", # "fisher"
 ):
     if not sae_config["path"]: 
         return 0
@@ -70,6 +71,10 @@ def id_refusal_feature_for_sae(
         is_local = sae_config["is_local"],
     )
 
+    cohens_d, fisher = sparsify_utils.compute_effect_sizes(results, layer=0)
+    results[0]['stats']['cohens_d'] = cohens_d
+    results[0]['stats']['fisher'] = fisher
+
     feature_summary = sparsify_utils.identify_top_features(
         results.copy(),
         layers=layers, 
@@ -78,10 +83,22 @@ def id_refusal_feature_for_sae(
         rank_metric=rank_metric,
     )
 
-    if visualise:            
+    if visualise_latent_difference:
         sparsify_utils.visualize_latent_differences(
             harmful_reps_list, harmless_reps_list, diff_list,
             sae_name
+        )
+    if visualise_top_features:
+        harmful_reps = harmful_reps_list[0]
+        harmless_reps = harmless_reps_list[0]
+        
+        # Call the new all-in-one visualization function
+        sparsify_utils.create_sae_feature_dashboard(
+            full_results_obj=results,
+            harmful_reps=harmful_reps,
+            harmless_reps=harmless_reps,
+            feature_summary=feature_summary,
+            sae_name=sae_name
         )
 
     print("Top features overall (harmful):")

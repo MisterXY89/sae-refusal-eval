@@ -18,13 +18,14 @@ import lm_eval
 from lm_eval.utils import setup_logging
 from lm_eval.models.hf_steered import SteeredModel, steer
 from lm_eval.models.huggingface import HFLM
+
 from steering.sae.sparsify import generate_with_steered_hf
 from utils.generation import HF_GENERATION_KW_ARGS
 from data_tools.instructions import get_harmful_instructions, get_harmless_instructions
 from evaluation.refusal import get_refusal_scores, get_semantic_refusal_score
 
 
-seed = 99999
+seed = 3498523
 random.seed(seed)
 np.random.seed(seed)
 torch.manual_seed(seed)
@@ -161,10 +162,12 @@ def refusal_eval(args):
         'harmful': harmful_data,
         'harmless': harmless_data,
     }
+    print("rr: ", rr, "orr: ", orr)
 
     with open(out_path, 'w') as f:
         json.dump(results, f, indent=2)
     print(f"Results written to {out_path}")
+    return rr, orr
 
 
 
@@ -207,8 +210,8 @@ def main():
     if args.batch_size: 
         cmd += ["--batch_size",str(args.batch_size)]
 
-    # print("→ Running:", " ".join(cmd), file=sys.stderr)
-    # subprocess.run(cmd, check=True)
+    print("→ Running:", " ".join(cmd), file=sys.stderr)
+    subprocess.run(cmd, check=True)
 
 
 if __name__ == "__main__":

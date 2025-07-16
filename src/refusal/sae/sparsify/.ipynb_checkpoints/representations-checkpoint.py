@@ -1,6 +1,4 @@
-import os
-
-import matplotlib.pyplot as plt
+mport matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
@@ -30,7 +28,7 @@ def get_prompt_representation(
       rep: a 1D tensor of shape [latent_dim] representing the aggregated prompt representation.
       actual_seq_length: number of real (non-padded) tokens.
     """
-    # 1) tokenize & pad
+    # 1) Tokenize & pad
     inputs = tokenizer(
         prompt,
         return_tensors="pt",
@@ -39,33 +37,29 @@ def get_prompt_representation(
         truncation=True,
     )
     actual_seq_length = int(inputs["attention_mask"].sum().item())
-    # print(actual_seq_length)
-    # print(expansion_factor)
 
-    # 2) move to device & run
+    # 2) Move to device & run model
     device = next(model.parameters()).device
     for k, v in inputs.items():
         inputs[k] = v.to(device)
     with torch.inference_mode():
         outputs = model(**inputs)
-        hidden = outputs.hidden_states[layer + 1]  # +1 since hidden_states[0] is embeddings
-        latent = sae.encode(hidden)
+        # hidden has shape [batch_size=1, seq_len, hidden_dim]
+        hidden = outputs.hidden_states[layer + 1]
 
-    per_token_acts = latent.top_acts  # e.g., shape [1, 32768, 32]
-    print(per_token_acts.shape)
-    
-    # Add a print statement to verify the shape during a run
-    # print("Shape of latent.top_acts:", per_token_acts.shape)
-    # print("Actual sequence length:", actual_seq_length)
+        # 3) Flatten hidden state for the SAE and encode
+        # Shape changes: [1, seq_len, hidden_dim] -> [seq_len, hidden_dim]
+        hidden_2d = hidden.squeeze(0)
+        
+        # Now pass the 2D tensor to the SAE
+        latent = sae.encode(hidden_2d)
 
-    # 4) Aggregate: We no longer need to create an `expansion_factor` dimension.
-    #    The goal is to get a representation of shape [F]. We can do this
-    #    by taking the mean across the sequence length dimension.
-    
-    # Ensure you only average over the real tokens, not padding.
-    # The SAE output is likely already unpadded, so its seq_len dim should equal actual_seq_length.
-    rep = per_token_acts.mean(dim=-1)  # Take mean over the sequence_length dimension -> shape [B, F]
+    # 4) Get the full pre-activation vector for the last non-padded token
+    # `latent.pre_acts` has shape [seq_len, num_features]
+    # We index at `actual_seq_length - 1` to get the last token's vector.
+    last_token_idx = actual_seq_length - 1
+    rep = latent.pre_acts[last_token_idx, :]
 
-    return rep.squeeze(0), actual_seq_length
+    return rep, actual_seq_length
 
 

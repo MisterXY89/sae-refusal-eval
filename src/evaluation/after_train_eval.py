@@ -217,7 +217,7 @@ def _extract_training_params(sae_checkpoint_dir: str) -> str:
 
 def post_train_eval(
     sae_checkpoint_dir: str,
-    model_name: str = "HuggingFaceTB/SmolLM-135M",
+    model_name: str = "HuggingFaceTB/SmolLM2-135M",
     eval_dataset: str = "datablations/c4-filter-small",
     split: str = "train",
     layer_idx: int = 18,

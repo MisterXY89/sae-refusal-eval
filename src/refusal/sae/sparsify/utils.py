@@ -1,9 +1,106 @@
 
+import pathlib
+import numpy as np
+import pandas as pd
+
+import seaborn as sns
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
+
+
+def create_sae_feature_dashboard(
+    full_results_obj: dict,
+    harmful_reps: np.ndarray,
+    harmless_reps: np.ndarray,
+    feature_summary: dict,
+    sae_name: str,
+    n_features_to_show: int = 5,
+    results_path: str = "results/visualizations",
+):
+    """
+    Creates a comprehensive, single-SAE analysis dashboard.
+
+    - Column 1: Volcano plot showing the entire feature landscape.
+    - Column 2: Distribution plot for the top "Refusal" (harmful) features.
+    - Column 3: Distribution plot for the top "Benign" (harmless) features.
+    
+    Args:
+        full_results_obj (dict): The complete 'results' object from compute_sae_stats.
+        harmful_reps (np.ndarray): Activation matrix for harmful prompts.
+        harmless_reps (np.ndarray): Activation matrix for harmless prompts.
+        feature_summary (dict): Dict containing 'top_harmful' and 'top_harmless' DataFrames.
+        sae_name (str): Name for titling and saving the plot.
+        n_features_to_show (int): Number of top features to show in distribution plots.
+        results_path (str): Directory to save the plot.
+    """
+    # --- Step 0: Prepare output directory and styling ---
+    pathlib.Path(results_path).mkdir(parents=True, exist_ok=True)
+    sns.set_theme(style="whitegrid", context="talk")
+    palette = {'Harmful': '#d62728', 'Harmless': '#1f77b4'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(24, 7), gridspec_kw={'width_ratios': [1.2, 1, 1]})
+    fig.suptitle(f"Feature Analysis for {sae_name}", y=1.05, weight='bold', fontsize=22)
+
+    # --- Column 1: Volcano Plot ---
+    stats = full_results_obj[0]['stats']
+    volcano_df = pd.DataFrame({'diff': stats['diff'], 'fisher': stats['fisher']})
+    volcano_df['log_fisher'] = np.log1p(volcano_df['fisher'])
+    
+    sns.scatterplot(data=volcano_df, x='diff', y='log_fisher', alpha=0.4, s=15, ax=axes[0], color='#3A539B')
+    axes[0].set_title("Harmful vs. Harmless Feature Separability ")
+    axes[0].set_xlabel("Mean Difference (Harmful - Harmless)")
+    axes[0].set_ylabel("Log Fisher Score (Significance)")
+
+    # --- Columns 2 & 3: Feature Distribution Plots ---
+    plot_configs = [
+        ("Top Harmful Features", feature_summary['top_harmful'], axes[1]),
+        ("Top Harmless Features", feature_summary['top_harmless'], axes[2])
+    ]
+
+    for title, df, ax in plot_configs:
+        dims_to_plot = df['latent_dim'].head(n_features_to_show).tolist()
+        if not dims_to_plot:
+            ax.text(0.5, 0.5, "No features found", ha='center', va='center')
+            continue
+
+        plot_data = []
+        for dim in dims_to_plot:
+            for act in harmful_reps[:, dim]:
+                plot_data.append({'act': act, 'cond': 'Harmful', 'feat': f"Feat {dim}"})
+            for act in harmless_reps[:, dim]:
+                plot_data.append({'act': act, 'cond': 'Harmless', 'feat': f"Feat {dim}"})
+        
+        plot_df = pd.DataFrame(plot_data)
+        
+        sns.stripplot(data=plot_df, x='feat', y='act', hue='cond', dodge=True, jitter=0.3, alpha=0.7, ax=ax, palette=palette, legend=(ax == axes[1]))
+        ax.set_title(title)
+        ax.set_xlabel("")
+        ax.set_ylabel("Activation" if ax == axes[1] else "")
+        ax.tick_params(axis='x', rotation=45)
+
+    # --- Final Formatting ---
+    if axes[1].get_legend():
+        sns.move_legend(axes[1], "upper center", bbox_to_anchor=(1.1, -0.2), ncol=2, title=None, frameon=False)
+    if axes[2].get_legend():
+        axes[2].get_legend().remove()
+    
+    fig.tight_layout(rect=[0, 0.05, 1, 1])
+    
+    save_path = pathlib.Path(results_path) / f"sae_feature_dashboard_{sae_name.replace(' ', '_')}.png"
+    plt.savefig(save_path, dpi=150, bbox_inches='tight')
+    plt.show()
+    plt.close(fig)
+    print(f"✅ Dashboard saved to: {save_path}")
+    
+import pathlib
+import pandas as pd
+
 import numpy as np
 from numpy import linspace, arange
+
+import seaborn as sns
+import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
-import pandas as pd
 
 def compute_effect_sizes(results, layer, epsilon: float = 1e-8):
     """
@@ -162,7 +259,7 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
             d.reshape(1, -1),
             cmap="Blues", #coolwarm
             aspect="auto",
-            interpolation="nearest"
+            # interpolation="nearest"
         )
         ax_row[2].set_title(f"Mean Difference (Layer {i})\n(Harmful − Harmless)")
         ax_row[2].set_xlabel("Latent Dimension")
@@ -172,5 +269,90 @@ def visualize_latent_differences(harmful, harmless, diff, sae_name):
         fig.colorbar(im2, ax=ax_row[2])
 
     plt.tight_layout()
-    plt.savefig(f"/home/tilman.kerl/mech-interp/src/results/visualizations/feature_id_{sae_name}", dpi=150, bbox_inches='tight')
+    plt.savefig(f"/home/tilman.kerl/mech-interp/src/results/visualizations/latent_dif_feature_id_{sae_name}", dpi=150, bbox_inches='tight')
     plt.show()
+
+
+def create_sae_feature_dashboard(
+    full_results_obj: dict,
+    harmful_reps: np.ndarray,
+    harmless_reps: np.ndarray,
+    feature_summary: dict,
+    sae_name: str,
+    n_features_to_show: int = 5,
+    results_path: str = "results/visualizations",
+):
+    """
+    Creates a comprehensive, single-SAE analysis dashboard.
+
+    - Column 1: Volcano plot showing the entire feature landscape.
+    - Column 2: Distribution plot for the top "Refusal" (harmful) features.
+    - Column 3: Distribution plot for the top "Benign" (harmless) features.
+    
+    Args:
+        full_results_obj (dict): The complete 'results' object from compute_sae_stats.
+        harmful_reps (np.ndarray): Activation matrix for harmful prompts.
+        harmless_reps (np.ndarray): Activation matrix for harmless prompts.
+        feature_summary (dict): Dict containing 'top_harmful' and 'top_harmless' DataFrames.
+        sae_name (str): Name for titling and saving the plot.
+        n_features_to_show (int): Number of top features to show in distribution plots.
+        results_path (str): Directory to save the plot.
+    """
+    # --- Step 0: Prepare output directory and styling ---
+    pathlib.Path(results_path).mkdir(parents=True, exist_ok=True)
+    sns.set_theme(style="whitegrid", context="talk")
+    palette = {'Harmful': '#d62728', 'Harmless': '#1f77b4'}
+
+    fig, axes = plt.subplots(1, 3, figsize=(24, 7), gridspec_kw={'width_ratios': [1.2, 1, 1]})
+    fig.suptitle(f"Feature Analysis for {sae_name}", y=1.05, weight='bold', fontsize=22)
+
+    # --- Column 1: Volcano Plot ---
+    stats = full_results_obj[0]['stats']
+    volcano_df = pd.DataFrame({'diff': stats['diff'], 'fisher': stats['fisher']})
+    volcano_df['log_fisher'] = np.log1p(volcano_df['fisher'])
+    
+    sns.scatterplot(data=volcano_df, x='diff', y='log_fisher', alpha=0.4, s=15, ax=axes[0], color='#3A539B')
+    axes[0].set_title("Harmful vs. Harmless Feature Separability ")
+    axes[0].set_xlabel("Mean Difference (Harmful - Harmless)")
+    axes[0].set_ylabel("Log Fisher Score (Significance)")
+
+    # --- Columns 2 & 3: Feature Distribution Plots ---
+    plot_configs = [
+        ("Top Harmful Features", feature_summary['top_harmful'], axes[1]),
+        ("Top Harmless Features", feature_summary['top_harmless'], axes[2])
+    ]
+
+    for title, df, ax in plot_configs:
+        dims_to_plot = df['latent_dim'].head(n_features_to_show).tolist()
+        if not dims_to_plot:
+            ax.text(0.5, 0.5, "No features found", ha='center', va='center')
+            continue
+
+        plot_data = []
+        for dim in dims_to_plot:
+            for act in harmful_reps[:, dim]:
+                plot_data.append({'act': act, 'cond': 'Harmful', 'feat': f"Feat {dim}"})
+            for act in harmless_reps[:, dim]:
+                plot_data.append({'act': act, 'cond': 'Harmless', 'feat': f"Feat {dim}"})
+        
+        plot_df = pd.DataFrame(plot_data)
+        
+        sns.stripplot(data=plot_df, x='feat', y='act', hue='cond', dodge=True, jitter=0.3, alpha=0.7, ax=ax, palette=palette, legend=(ax == axes[1]))
+        ax.set_title(title)
+        ax.set_xlabel("")
+        ax.set_ylabel("Activation" if ax == axes[1] else "")
+        ax.tick_params(axis='x', rotation=45)
+
+    # --- Final Formatting ---
+    if axes[1].get_legend():
+        sns.move_legend(axes[1], "upper center", bbox_to_anchor=(1.1, -0.2), ncol=2, title=None, frameon=False)
+    if axes[2].get_legend():
+        axes[2].get_legend().remove()
+    
+    fig.tight_layout(rect=[0, 0.05, 1, 1])
+    
+    save_path = pathlib.Path(results_path) / f"dashboard_{sae_name.replace(' ', '_')}.png"
+    plt.savefig(save_path, dpi=150, bbox_inches='tight')
+    plt.show()
+    plt.close(fig)
+    print(f"✅ Dashboard saved to: {save_path}")

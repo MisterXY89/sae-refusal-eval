@@ -36,7 +36,7 @@ def sanitize_filename(name: str) -> str:
     return re.sub(r'[^a-zA-Z0-9_-]', '_', name)
 
 
-def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
+def load_sae_results(results_dir: str = "results/saes/", model="135M") -> pd.DataFrame:
     """
     Loads all SAE evaluation .json files from a directory into a pandas DataFrame.
 
@@ -46,6 +46,10 @@ def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
     Returns:
         A pandas DataFrame with the aggregated results, or an empty DataFrame if no files are found.
     """
+    supported_models = ["135M", "360M"]
+    if model not in supported_models:
+        return f"model ({model}) not supported. Please use one of {supported_models}."
+     
     results_path = Path(results_dir)
     if not results_path.exists():
         print(f"Error: Directory not found at '{results_dir}'")
@@ -60,6 +64,12 @@ def load_sae_results(results_dir: str = "results/saes/") -> pd.DataFrame:
     
     all_results = []
     for file in json_files:
+        if "smollm2" not in file.stem:
+            continue
+        if model == "360M" and "360M" not in file.stem:
+            continue
+        if model == "135M" and "360" in file.stem:
+            continue
         with open(file, 'r') as f:
             data = json.load(f)
             all_results.append(data)
