@@ -1,2 +1,0 @@
-loader,action,sparse_model,hookpoint,feature_index,steering_coefficient
-sparsify,add,/home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/smollm2-sparsify-lmsys-419M-token-18-layers-16-expansion-64-k/layers.18/,layers.8,17,10.0

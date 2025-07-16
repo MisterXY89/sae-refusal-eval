@@ -24,7 +24,7 @@ from data_tools.instructions import get_harmful_instructions, get_harmless_instr
 from evaluation.refusal import get_refusal_scores, get_semantic_refusal_score
 
 
-seed = 99999
+seed = 3498523
 random.seed(seed)
 np.random.seed(seed)
 torch.manual_seed(seed)
@@ -161,10 +161,12 @@ def refusal_eval(args):
         'harmful': harmful_data,
         'harmless': harmless_data,
     }
+    print("rr: ", rr, "orr: ", orr)
 
     with open(out_path, 'w') as f:
         json.dump(results, f, indent=2)
     print(f"Results written to {out_path}")
+    return rr, orr
 
 
 
@@ -207,7 +209,7 @@ def main():
     if args.batch_size: 
         cmd += ["--batch_size",str(args.batch_size)]
 
-    print("→ Running:", " ".join(cmd), file=sys.stderr)
+    # print("→ Running:", " ".join(cmd), file=sys.stderr)
     # subprocess.run(cmd, check=True)
 
 

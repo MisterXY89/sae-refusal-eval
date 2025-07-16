@@ -1,2 +1,2 @@
 loader,action,sparse_model,hookpoint,feature_index,steering_coefficient
-sparsify,add,EleutherAI/sae-pythia-410m-65k,layers.1.mlp,384,10.0
+sparsify,clamp,/home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k,layers.6,730,5.0

@@ -1,0 +1,77 @@
+[
+  {
+    "sae_id": "EleutherAI/sae-SmolLM2-135M-64x",
+    "layers": [
+      {
+        "hookpoint": "layers.6",
+        "indices": "16382 7815 11942 17351 9003",
+        "coeffs": "11.0 5.0 14.0 2.0 8.0"
+      },
+      {
+        "hookpoint": "layers.24",
+        "indices": "8432 15001 1983 5744 12098 7321 4450",
+        "coeffs": "7.0 1.0 15.0 9.0 4.0 11.0 6.0"
+      }
+    ]
+  },
+  {
+    "sae_id": "/home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-EQ-50M-token-6_25-layers-32-expansion-64-k",
+    "layers": [
+      {
+        "hookpoint": "layers.6",
+        "indices": "18011",
+        "coeffs": "13.0"
+      },
+      {
+        "hookpoint": "layers.25",
+        "indices": "6328 14782 17901 1001",
+        "coeffs": "3.0 12.0 8.0 1.0"
+      }
+    ]
+  },
+  {
+    "sae_id": "/home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-INS-50M-token-6_25-layers-32-expansion-64-k",
+    "layers": [
+      {
+        "hookpoint": "layers.6",
+        "indices": "9542 11034 2854 16788 4391 18333 7621 14002",
+        "coeffs": "15.0 2.0 7.0 9.0 11.0 4.0 1.0 13.0"
+      },
+      {
+        "hookpoint": "layers.25",
+        "indices": "1298 10845 15302 6117 8999 17432 3051 5220 16604 1184",
+        "coeffs": "6.0 14.0 1.0 10.0 5.0 8.0 12.0 3.0 9.0 7.0"
+      }
+    ]
+  },
+  {
+    "sae_id": "/home/tilman.kerl/mech-interp/src/train/MIX/checkpoints/smollm2-sparsify-PRE-50M-token-6_25-layers-32-expansion-64-k",
+    "layers": [
+      {
+        "hookpoint": "layers.6",
+        "indices": "13101 409",
+        "coeffs": "2.0 11.0"
+      },
+      {
+        "hookpoint": "layers.25",
+        "indices": "7810 15993 1247",
+        "coeffs": "10.0 4.0 8.0"
+      }
+    ]
+  },
+  {
+    "sae_id": "/home/tilman.kerl/mech-interp/src/train/LMSYS/checkpoints/smollm2-sparsify-lmsys-50M-token-6_25-layers-32-expansion-64-k",
+    "layers": [
+      {
+        "hookpoint": "layers.6",
+        "indices": "8241 1765 14209 10088 5321 16890",
+        "coeffs": "9.0 1.0 13.0 6.0 15.0 4.0"
+      },
+      {
+        "hookpoint": "layers.25",
+        "indices": "18431 3141 5926 9793",
+        "coeffs": "12.0 5.0 7.0 2.0"
+      }
+    ]
+  }
+]

@@ -10,6 +10,8 @@ ma_env/
 .pytest_cache/
 .mypy_cache/
 
+src/evaluation/delphi-tests-results/*
+
 
 **/logs/**
 
