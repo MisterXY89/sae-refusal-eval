@@ -1,7 +1,21 @@
 venv/
-
 ma_env/
 
+paper/*
+proposal/*
+
+**/delphi.log
+src/delphi
+src/sparsify
+src/lmsys
+src/statistics
+src/steer_configs
+src/evaluation/statistics
+src/lm-evaluation-harness
+src/refusal_dirs
+
+src/evaluation/results/
+src/results/feat-annot-*
 **/wandb/*
 
 **/__pycache__/*
