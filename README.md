@@ -1,50 +1,15 @@
-# Evaluation of Sparse Autoencoder-based Refusal Features in LLMs A Dataset-dependence Study 
+# Evaluation of Sparse Autoencoder-based Refusal Features in LLMs
 
-SmolLM2-135M - 
+This repository contains the source code and experimental setup for the master's thesis,
 
-Contains code, data & results.
+**"Evaluation of Sparse Autoencoder-based Refusal Features in LLMs: A Dataset-dependence Study"**.
 
+The core objective of this research is to systematically investigate how the training dataset of a Sparse Autoencoder (SAE) influences its ability to identify, represent, and control refusal behaviours in (base) Large Language Models (LLMs). Our findings demonstrate that SAE feature discovery is highly dependent on its training data, and a mix of pre-training and instruction-style data yields the most effective and steerable refusal-related features, aligning with previous and concurrent work. 
 
-## Data & Instruct
-Pythia quantized models: https://huggingface.co/Crataco/Pythia-Deduped-Series-GGML 
---> or use bits & bytes
-
-- The [pile](https://pile.eleuther.ai/).
-  - https://huggingface.co/datasets/EleutherAI/the_pile_deduplicated
-- https://github.com/EleutherAI/pythia/issues/155 
-- [databricks/databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k)
-- [oasst1](https://huggingface.co/datasets/OpenAssistant/oasst1)
-- [CodeAlpaca-20k](https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k)
-
-160M
-- https://huggingface.co/EleutherAI/sae-pythia-160m-32k
-
-410M
-- https://huggingface.co/SummerSigh/Pythia410m-V0-Instruct
-  - https://huggingface.co/datasets/OpenAssistant/oasst_top1_2023-08-25
-- https://huggingface.co/EleutherAI/sae-pythia-410m-65k
-
-
-1.4B
-- https://huggingface.co/EleutherAI/pythia-1.4b
-- https://huggingface.co/lambdalabs/pythia-1.4b-deduped-synthetic-instruct
-  - Dataset: Dahoas/synthetic-instruct-gptj-pairwise
-- 
-
-2.8B:
-- jacobdunefsky/pythia-2.8B-saes 
-- https://huggingface.co/lambdalabs/pythia-2.8b-deduped-synthetic-instruct
-- Dahoas/synthetic-instruct-gptj-pairwise
-  
-6.9B
-- 6.9: https://huggingface.co/allenai/open-instruct-pythia-6.9b-tulu
-
-Olmo 7b -> instruct + base model
--> SAE missing
 
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-(C) 2024 [Tilman Kerl](https://linkedin.com/in/tilman-kerl)
+(C) 2024-2025 [Tilman Kerl](https://linkedin.com/in/tilman-kerl)
