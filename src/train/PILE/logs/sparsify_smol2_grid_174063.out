@@ -1,12 +1,0 @@
-#####################################################
-### Starting Set of Runs for MAX_EX = 6557946 (419M tokens) ###
-#####################################################
-=====================================================
-    Starting Run: Factor=8, Tokens=419M
-=====================================================
-W0618 10:08:30.127000 2392401 site-packages/torch/distributed/run.py:792] 
-W0618 10:08:30.127000 2392401 site-packages/torch/distributed/run.py:792] *****************************************
-W0618 10:08:30.127000 2392401 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
-W0618 10:08:30.127000 2392401 site-packages/torch/distributed/run.py:792] *****************************************
-Using DDP across 2 GPUs.
-Map (num_proc=4):   0%|          | 0/177009652 [00:00<?, ? examples/s]Map (num_proc=4):   0%|          | 2048/177009652 [02:43<3932:38:48, 12.50 examples/s]Map (num_proc=4):   0%|          | 4096/177009652 [02:47<1676:21:34, 29.33 examples/s]Map (num_proc=4):   0%|          | 8192/177009652 [02:48<629:47:07, 78.07 examples/s] Map (num_proc=4):   0%|          | 10240/177009652 [02:57<505:08:55, 97.33 examples/s]Map (num_proc=4):   0%|          | 12288/177009652 [03:01<373:15:43, 131.72 examples/s]Map (num_proc=4):   0%|          | 16384/177009652 [03:02<208:03:01, 236.31 examples/s]Map (num_proc=4):   0%|          | 18432/177009652 [03:11<207:37:24, 236.80 examples/s]Map (num_proc=4):   0%|          | 20480/177009652 [03:11<156:34:30, 313.99 examples/s]Map (num_proc=4):   0%|          | 22528/177009652 [03:13<123:19:32, 398.64 examples/s]Map (num_proc=4):   0%|          | 24576/177009652 [03:15<104:02:55, 472.50 examples/s]Map (num_proc=4):   0%|          | 26624/177009652 [03:20<111:17:19, 441.75 examples/s]Map (num_proc=4):   0%|          | 28672/177009652 [03:22<92:50:40, 529.50 examples/s] Map (num_proc=4):   0%|          | 30720/177009652 [03:24<80:23:58, 611.46 examples/s]Map (num_proc=4):   0%|          | 32768/177009652 [03:30<92:30:59, 531.37 examples/s]Map (num_proc=4):   0%|          | 34816/177009652 [03:32<81:52:53, 600.38 examples/s]Map (num_proc=4):   0%|          | 36864/177009652 [03:39<105:52:50, 464.29 examples/s]slurmstepd: error: *** JOB 174063 ON a-a100-o-1 CANCELLED AT 2025-06-18T10:14:14 ***
