@@ -47,7 +47,7 @@ WANDB_FREQ=100
 source /home/tilman.kerl/miniconda3/etc/profile.d/conda.sh
 conda activate refusal
 
-export HF_TOKEN=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
+export HF_TOKEN=hf_XXXXXXX
 export HF_HOME=/share/tilman.kerl/huggingface
 
 

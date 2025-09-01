@@ -26,7 +26,7 @@ PRE_TRAINED_MODEL="HuggingFaceTB/SmolLM2-135M"
 source /home/tilman.kerl/miniconda3/etc/profile.d/conda.sh
 conda activate refusal
 
-export HF_TOKEN=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
+export HF_TOKEN=hf_XXXXXXX
 export HF_HOME=/share/tilman.kerl/huggingface
 
 # -------- payload -------------------------------------------------

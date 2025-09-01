@@ -29,7 +29,7 @@ pre_trained_model="HuggingFaceTB/SmolLM2-135M"
 source /home/tilman.kerl/miniconda3/etc/profile.d/conda.sh
 conda activate refusal
 
-export HF_TOKEN=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
+export HF_TOKEN=hf_XXXXXXX
 export HF_HOME=/share/tilman.kerl/huggingface
 export OPENROUTER_API_KEY=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
 
